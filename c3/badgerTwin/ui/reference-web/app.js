@@ -1,4 +1,4 @@
-// BadgerTwin front end: plain JS, no build step. Every number comes from the API.
+// LoopWatch front end: plain JS, no build step. Every number comes from the API.
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
 const fmt = (n, d = 0) => (n === null || n === undefined || Number.isNaN(n)) ? "—" : Number(n).toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d });

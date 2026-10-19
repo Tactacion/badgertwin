@@ -130,7 +130,7 @@ export default function App() {
       <header className="pointer-events-none absolute inset-x-0 top-0 z-10 flex items-center gap-4 px-5 py-4">
         <div className="pointer-events-auto flex items-center gap-2.5">
           <div className="grid size-9 place-items-center rounded-xl bg-white text-black"><Droplets className="size-5" /></div>
-          <div><div className="font-semibold leading-none">BadgerTwin</div><div className="mt-0.5 text-[11px] text-white/50">UW–Madison chilled water</div></div>
+          <div><div className="font-semibold leading-none">LoopWatch</div><div className="mt-0.5 text-[11px] text-white/50">UW–Madison chilled water</div></div>
         </div>
         <Tabs value={tab} onValueChange={(v: any) => setTab(v)} className="pointer-events-auto mx-auto">
           <TabsList className="h-10 rounded-full border border-white/10 bg-black/45 p-1 backdrop-blur-xl">

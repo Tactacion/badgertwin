@@ -1,4 +1,4 @@
-// Typed client for the BadgerTwin API (badgertwin/server.py).
+// Typed client for the LoopWatch API (badgertwin/server.py).
 export type Risk = "Normal" | "Watch" | "Act" | "Closed"
 
 export interface Suspect { pipe_id: string; from_node: string; to_node: string; score: number; flow_imbalance_gpm: number | null; reason: string }

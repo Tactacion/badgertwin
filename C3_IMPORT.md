@@ -1,4 +1,4 @@
-# Getting BadgerTwin into your C3 Code workspace
+# Getting LoopWatch into your C3 Code workspace
 
 The working app and its logic live in this repo, and `c3/badgerTwin/` is the same thing packaged for C3. C3 Code workspaces are Git-backed, with one branch per workspace ([docs](https://docs.c3.ai/docs/genesis/8.10/topic/c3code-overview)). The plan is to put the repo on GitHub, bring it into the workspace, and let C3 Code adapt the few platform-specific lines.
 

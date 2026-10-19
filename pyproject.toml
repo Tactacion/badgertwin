@@ -1,7 +1,7 @@
 [project]
 name = "badgertwin"
 version = "1.0.0"
-description = "BadgerTwin: digital twin of UW-Madison's campus chilled-water network (hackathon demo)"
+description = "LoopWatch: digital twin of UW-Madison's campus chilled-water network (hackathon demo)"
 requires-python = ">=3.11"
 dependencies = ["pandas>=2.2", "numpy>=1.26", "scipy>=1.11", "networkx>=3.2", "fastapi>=0.110", "uvicorn>=0.29"]
 

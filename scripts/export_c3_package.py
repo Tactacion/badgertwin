@@ -319,7 +319,7 @@ def main() -> None:
     (PKG / "data").mkdir()
 
     (PKG / "badgerTwin.c3pkg.json").write_text(json.dumps(
-        {"name": "badgerTwin", "version": "1.0.0", "description": "BadgerTwin: campus chilled-water digital twin (simulated data)",
+        {"name": "badgerTwin", "version": "1.0.0", "description": "LoopWatch: campus chilled-water digital twin (simulated data)",
          "dependencies": {}}, indent=2) + "\n")
 
     for name, (path, id_col, desc) in ENTITIES.items():

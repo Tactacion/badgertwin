@@ -33,7 +33,7 @@ export function Intro({ onStart }: { onStart: () => void }) {
         </motion.p>
         <motion.div {...line(3.8)} className="mt-10">
           <Button size="lg" onClick={onStart} className="h-12 rounded-full bg-white px-8 text-base text-black hover:bg-white/90">
-            Replay it with BadgerTwin →
+            Replay it with LoopWatch →
           </Button>
         </motion.div>
       </div>

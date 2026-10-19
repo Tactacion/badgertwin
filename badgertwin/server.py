@@ -1,4 +1,4 @@
-"""Local API + web UI for BadgerTwin.  Run:  .venv/bin/uvicorn badgertwin.server:app --reload"""
+"""Local API + web UI for LoopWatch.  Run:  .venv/bin/uvicorn badgertwin.server:app --reload"""
 from __future__ import annotations
 
 import os
@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WEB = Path(__file__).resolve().parent / "web"
 STATE = Path(os.environ.get("BADGERTWIN_STATE", ROOT / "state" / "state.json"))
 
-app = FastAPI(title="BadgerTwin", version="1.0")
+app = FastAPI(title="LoopWatch", version="1.0")
 
 
 @lru_cache(maxsize=1)

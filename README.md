@@ -1,4 +1,4 @@
-# BadgerTwin
+# LoopWatch
 
 A digital twin of UW–Madison's campus chilled-water network. It replays the **June 17, 2026 main break** ($15.8M, 34 buildings) on simulated data built from public facts:
 
@@ -6,7 +6,7 @@ A digital twin of UW–Madison's campus chilled-water network. It replays the **
 2. **Plan the emergency.** When the main is shut off, a mixed-integer optimizer decides which buildings get plant water, where rented chillers go, and which buildings close. It solves in under a second, and judges can change the heat, the outage size or the budget live.
 3. **Humans approve.** Agents draft the diagnosis, work order, campus alert and Regents request. A named person approves anything that changes the system or spends money, and every step lands in the audit log.
 
-> **Simplified, simulated data built from public facts.** The pipe network is approximate and is not UW's real network. See [BADGERTWIN_C3_PLAYBOOK.md](BADGERTWIN_C3_PLAYBOOK.md) §12 for what is real, estimated and simulated.
+> **Simplified, simulated data built from public facts.** The pipe network is approximate and is not UW's real network. See [LOOPWATCH_C3_PLAYBOOK.md](LOOPWATCH_C3_PLAYBOOK.md) §12 for what is real, estimated and simulated.
 
 ## Run it
 

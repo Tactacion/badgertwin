@@ -1,8 +1,8 @@
-# BadgerTwin on C3 AI: the zero-to-one playbook
+# LoopWatch on C3 AI: the zero-to-one playbook
 
 > **Update:** the full app now lives in this repo and runs locally (see README.md). To move it into C3, follow **C3_IMPORT.md**. This playbook is the background reference.
 
-> **What this is:** everything needed to build BadgerTwin (a digital twin of UW–Madison's chilled-water network that replays the June 17, 2026 main break) on the C3 Agentic AI Platform using **C3 Code**. The guide covers where every dataset lives, how C3 works, the exact data model, the algorithms, the screens, and a **master prompt you paste into C3 Code** (Part 7).
+> **What this is:** everything needed to build LoopWatch (a digital twin of UW–Madison's chilled-water network that replays the June 17, 2026 main break) on the C3 Agentic AI Platform using **C3 Code**. The guide covers where every dataset lives, how C3 works, the exact data model, the algorithms, the screens, and a **master prompt you paste into C3 Code** (Part 7).
 >
 > **Local data folder:** `/Users/revanshphull/c4ai/data/` (built 2026-10-19). Regenerate it any time with `.venv/bin/python scripts/build_twin_data.py`.
 >
@@ -16,7 +16,7 @@
 2. [How C3 AI works (only what you need)](#2-how-c3-ai-works-only-what-you-need)
 3. [Where to find everything (links)](#3-where-to-find-everything)
 4. [Your local data, file by file](#4-your-local-data-file-by-file)
-5. [The BadgerTwin data model (C3 Types)](#5-the-badgertwin-data-model-c3-types)
+5. [The LoopWatch data model (C3 Types)](#5-the-loopwatch-data-model-c3-types)
 6. [The algorithms (exact specs)](#6-the-algorithms-exact-specs)
 7. [THE MASTER PROMPT: paste into C3 Code](#7-the-master-prompt)
 8. [Follow-up prompts, one per phase](#8-follow-up-prompts-one-per-phase)
@@ -220,7 +220,7 @@ data/
 
 ---
 
-## 5. The BadgerTwin data model (C3 Types)
+## 5. The LoopWatch data model (C3 Types)
 
 Give this to C3 Code as the intended model. It will generate real `.c3typ` files, and the names matter because agents and UI reference them.
 
@@ -319,7 +319,7 @@ For chillers, add an efficiency drift term `(currentKwPerTon − designKwPerTon)
 4. Then go phase by phase with Part 8. **Don't expect one message to build everything.** The master prompt sets the spec, and the phase prompts get each piece working.
 
 ````text
-You are building "BadgerTwin", a working app on the C3 Agentic AI Platform: a simplified digital twin of
+You are building "LoopWatch", a working app on the C3 Agentic AI Platform: a simplified digital twin of
 UW–Madison's campus chilled-water network that replays the June 17, 2026 chilled-water main break and shows
 how earlier detection and an optimized emergency plan would change the outcome. This is for a judged
 hackathon; the rubric rewards a COMPLETE, WORKING end-to-end path over many half-built features. Nothing on
@@ -524,7 +524,7 @@ it computed. Add a "Reset demo" button that clears Incidents/Plans/Alerts create
 | 1:15 | Nine days early | Replay to Jun 8. Make-up water leaves its band, CW-M01 turns red. Open incident, see the diagnosis, approve the work order. "Planned repair, not an emergency." |
 | 2:15 | What if nobody acts | Jump to Jun 17 20:00. Plan solves in seconds and shows cost/day vs UW's $156K–$233K. **A judge sets 95 °F and knocks out a chiller**, and the plan updates live. |
 | 3:15 | The money | Repair priorities. Underground utilities aren't in the $2.5B backlog. One-page Regents request. |
-| 4:00 | Scale + close | 13 UW campuses next. "The pipe warned us in 1980. BadgerTwin makes sure we notice next time." |
+| 4:00 | Scale + close | 13 UW campuses next. "The pipe warned us in 1980. LoopWatch makes sure we notice next time." |
 
 ### Verification checklist (run the night before)
 

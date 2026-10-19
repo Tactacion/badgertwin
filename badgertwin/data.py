@@ -1,4 +1,4 @@
-"""Load the BadgerTwin dataset (data/simulated + data/curated) into one immutable bundle."""
+"""Load the LoopWatch dataset (data/simulated + data/curated) into one immutable bundle."""
 from __future__ import annotations
 
 from dataclasses import dataclass, field
