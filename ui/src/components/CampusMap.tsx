@@ -11,7 +11,12 @@ import { fmt } from "@/lib/api"
 // ---------------------------------------------------------------------------------------------
 
 export const RISK = { Normal: "#e7edf3", Watch: "#f5a524", Act: "#ff4d4f", Closed: "#ff4d4f" } as const
-const WATER = "rgba(150, 220, 255, 0.95)"
+// Water dots go from deep blue (slow) to bright ice (fast), like wind on windy.com
+function speedColor(fps: number) {
+  const k = Math.max(0, Math.min(1, fps / 10))
+  const r = Math.round(60 + 175 * k), g = Math.round(140 + 105 * k), b = 255
+  return `rgba(${r},${g},${b},${0.55 + 0.45 * k})`
+}
 const CAMPUS = { center: [-89.4048, 43.0742] as [number, number], zoom: 15.15, pitch: 55, bearing: -12 }
 const START = { center: [-89.41, 43.093] as [number, number], zoom: 12.6, pitch: 0, bearing: 0 }
 
@@ -50,21 +55,22 @@ function style(): StyleSpecification {
   }
 }
 
-export interface MapHandle { flyTo: (lon: number, lat: number, zoom?: number) => void; home: () => void; intro: () => void }
+export interface MapHandle { flyTo: (lon: number, lat: number, zoom?: number) => void; flyToId: (id: string) => void; home: () => void; intro: () => void }
 interface Props {
   geo: Geo | null; state: State | null; plan?: Plan | null; mode: "live" | "plan" | "fix"
-  basemap: "satellite" | "dark"; startOnCampus?: boolean; onPick?: (what: { kind: "pipe" | "building"; id: string; name: string }) => void
+  basemap: "satellite" | "dark"; startOnCampus?: boolean; selected?: string | null; onPick?: (what: { kind: "pipe" | "building"; id: string; name: string }) => void
 }
 
 type Particle = { pipe: number; s: number; jitter: number }
 type Spray = { x: number; y: number; vx: number; vy: number; life: number }
 
-export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, state, plan, mode, basemap, startOnCampus, onPick }, ref) {
+export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, state, plan, mode, basemap, startOnCampus, selected, onPick }, ref) {
   const box = useRef<HTMLDivElement>(null)
   const canvas = useRef<HTMLCanvasElement>(null)
   const map = useRef<MLMap | null>(null)
   const [ready, setReady] = useState(false)
   const [hover, setHover] = useState<{ x: number; y: number; html: string } | null>(null)
+  const [hud, setHud] = useState({ lat: 0, lon: 0, zoom: 0, bearing: 0, pitch: 0 })
   const live = useRef({ state, plan, mode, geo })
   live.current = { state, plan, mode, geo }
   const orbit = useRef(true)
@@ -75,6 +81,8 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
     const m = new MLMap({ container: box.current!, style: style(), ...(startOnCampus ? CAMPUS : START), maxPitch: 75, attributionControl: { compact: true } })
     map.current = m
     m.on("load", () => setReady(true))
+    const upd = () => { const c = m.getCenter(); setHud({ lat: c.lat, lon: c.lng, zoom: m.getZoom(), bearing: m.getBearing(), pitch: m.getPitch() }) }
+    m.on("move", upd); upd()
     const stop = () => (orbit.current = false)
     m.on("mousedown", stop); m.on("touchstart", stop); m.on("wheel", stop)
     return () => m.remove()
@@ -82,6 +90,16 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
 
   useImperativeHandle(ref, () => ({
     flyTo: (lon, lat, zoom = 16.6) => { orbit.current = false; map.current?.flyTo({ center: [lon, lat], zoom, pitch: 62, bearing: -30, duration: 2600, essential: true }) },
+    flyToId: (id) => {
+      const g = live.current.geo
+      const b = g?.buildings.features.find((f) => f.properties.building_id === id)
+      const pp = g?.pipes.features.find((f) => f.properties.pipe_id === id)
+      const pts: number[][] = b ? b.geometry.coordinates[0] : pp ? pp.geometry.coordinates : []
+      if (!pts.length) return
+      const lon = pts.reduce((a, q) => a + q[0], 0) / pts.length, lat = pts.reduce((a, q) => a + q[1], 0) / pts.length
+      orbit.current = false
+      map.current?.flyTo({ center: [lon, lat], zoom: 17, pitch: 62, bearing: map.current.getBearing() - 25, duration: 2200, essential: true })
+    },
     home: () => { orbit.current = true; map.current?.flyTo({ ...CAMPUS, duration: 2200, essential: true }) },
     intro: () => { orbit.current = true; map.current?.jumpTo(START); map.current?.flyTo({ ...CAMPUS, duration: 6500, curve: 1.6, essential: true }) },
   }))
@@ -99,6 +117,8 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
       paint: { "fill-extrusion-color": riskColor, "fill-extrusion-opacity": 0.9,
         "fill-extrusion-height": ["+", ["get", "height"], 0.8], "fill-extrusion-vertical-gradient": true,
         "fill-extrusion-color-transition": { duration: 600 } } as any })
+    m.addLayer({ id: "bt-b-sel", type: "line", source: "bt-b", filter: ["==", ["get", "building_id"], ""],
+      paint: { "line-color": "#ffffff", "line-width": 3, "line-blur": 1.5 } })
     // pipes: soft glow + core. Width grows with the square root of flow (area ∝ flow).
     const width: any = ["interpolate", ["linear"], ["zoom"], 13, ["*", 0.45, ["get", "w"]], 17, ["*", 1.8, ["get", "w"]]]
     const glowWidth: any = ["interpolate", ["linear"], ["zoom"], 13, ["*", 1.4, ["get", "w"]], 17, ["*", 5, ["get", "w"]]]
@@ -175,6 +195,16 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
     })
   }, [ready, geo, state, plan, mode])
 
+  // --------------------------------------------------------------- selection highlight
+  useEffect(() => {
+    const m = map.current
+    if (!ready || !m || !m.getLayer("bt-b-sel")) return
+    m.setFilter("bt-b-sel", ["==", ["get", "building_id"], selected ?? ""])
+    m.setPaintProperty("bt-p-core", "line-opacity", selected?.startsWith("CW-")
+      ? ["case", ["==", ["get", "pipe_id"], selected], 1, 0.25] as any
+      : ["case", ["==", ["get", "label"], "Normal"], 0.55, 0.95] as any)
+  }, [ready, selected])
+
   // --------------------------------------------------------------- rented chiller markers
   useEffect(() => {
     markers.current.forEach((mk) => mk.remove())
@@ -207,6 +237,10 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
       for (let k = 0; k < n; k++) parts.push({ pipe: i, s: Math.random(), jitter: (Math.random() - 0.5) * 0.6 })
     })
     const sprays: Spray[] = []
+    const centroids = new Map(geo.buildings.features.map((f) => {
+      const ring = f.geometry.coordinates[0] as number[][]
+      return [f.properties.name, [ring.reduce((a, q) => a + q[0], 0) / ring.length, ring.reduce((a, q) => a + q[1], 0) / ring.length]] as const
+    }))
     let raf = 0, last = performance.now(), ripple = 0
     const resize = () => {
       const r = cv.parentElement!.getBoundingClientRect(), dpr = Math.min(2, window.devicePixelRatio || 1)
@@ -221,7 +255,9 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
       const flow = Object.fromEntries((st?.pipes ?? []).map((p) => [p.pipe_id, p]))
       if (orbit.current && !reduce && !m.isMoving()) m.setBearing(m.getBearing() + dt * 1.2)
       const W = cv.clientWidth, H = cv.clientHeight
-      ctx.clearRect(0, 0, W, H)
+      // Windy-style trails: fade the last frame instead of wiping it (wipe while the camera jumps)
+      if (m.isMoving() && !orbit.current) ctx.clearRect(0, 0, W, H)
+      else { ctx.globalCompositeOperation = "destination-out"; ctx.fillStyle = `rgba(0,0,0,${reduce ? 1 : 0.28})`; ctx.fillRect(0, 0, W, H) }
       ctx.globalCompositeOperation = "lighter"
       const scale = Math.pow(2, m.getZoom() - 15)
       const ends = pipes.map((p) => [m.project(p.a as any), m.project(p.b as any)])
@@ -236,7 +272,7 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
         const y = A.y + (B.y - A.y) * pt.s + (ny / nl) * pt.jitter * Math.sqrt(p.d / 6) * scale
         if (x < -10 || y < -10 || x > W + 10 || y > H + 10) continue
         const r = (0.9 + Math.sqrt(p.d) / 6) * Math.min(1.6, Math.max(0.6, scale))
-        ctx.fillStyle = WATER
+        ctx.fillStyle = speedColor(f.velocity_fps)
         ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill()
       }
       // leak: spray rate grows with the water being lost (log scale); burst is a fountain
@@ -262,6 +298,23 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
         ctx.fillStyle = `rgba(255,${120 + 80 * s.life},${110 * s.life},${s.life})`
         ctx.beginPath(); ctx.arc(s.x, s.y, 1.6, 0, Math.PI * 2); ctx.fill()
       }
+      // kepler-style arcs: each rented chiller site → the buildings it cools
+      if (md === "plan" && live.current.plan) {
+        const dash = (now / 40) % 24
+        for (const pl of live.current.plan.placements) {
+          const A = m.project([pl.lon, pl.lat] as any)
+          for (const fd of pl.feeds ?? []) {
+            const c = centroids.get(fd.building)
+            if (!c) continue
+            const B = m.project(c as any)
+            const mx = (A.x + B.x) / 2, my = (A.y + B.y) / 2 - Math.hypot(B.x - A.x, B.y - A.y) * 0.45
+            ctx.strokeStyle = "rgba(255,255,255,0.85)"; ctx.lineWidth = 1.5 + Math.sqrt(fd.tons) / 12
+            ctx.setLineDash([6, 6]); ctx.lineDashOffset = -dash
+            ctx.beginPath(); ctx.moveTo(A.x, A.y); ctx.quadraticCurveTo(mx, my, B.x, B.y); ctx.stroke()
+            ctx.setLineDash([])
+          }
+        }
+      }
       ctx.globalCompositeOperation = "source-over"
       raf = requestAnimationFrame(frame)
     }
@@ -273,6 +326,21 @@ export const CampusMap = forwardRef<MapHandle, Props>(function CampusMap({ geo, 
     <div className="absolute inset-0">
       <div ref={box} className="h-full w-full" />
       <canvas ref={canvas} className="pointer-events-none absolute inset-0" />
+      {/* Lattice-style frame + readout */}
+      <div className="pointer-events-none absolute inset-4 z-[5]">
+        {["left-0 top-16 border-l border-t", "right-0 top-16 border-r border-t", "left-0 bottom-24 border-l border-b", "right-0 bottom-24 border-r border-b"].map((c) => (
+          <span key={c} className={`absolute size-5 border-white/35 ${c}`} />
+        ))}
+      </div>
+      <div className="pointer-events-none absolute bottom-[34px] left-6 z-[5] text-left font-mono text-[10.5px] leading-relaxed text-white/55">
+        <div>{hud.lat.toFixed(4)}°N {Math.abs(hud.lon).toFixed(4)}°W</div>
+        <div>zoom {hud.zoom.toFixed(1)} · tilt {Math.round(hud.pitch)}° · heading {((Math.round(hud.bearing) % 360) + 360) % 360}°</div>
+        <div className="mt-1.5 flex items-center gap-2">
+          <span>water speed</span>
+          <span className="h-1.5 w-24 rounded-full" style={{ background: `linear-gradient(90deg, ${speedColor(0)}, ${speedColor(5)}, ${speedColor(10)})` }} />
+          <span>10+ ft/s</span>
+        </div>
+      </div>
       {hover && (
         <div className="pointer-events-none absolute z-20 rounded-lg border border-white/10 bg-black/75 px-3 py-2 text-xs text-white shadow-xl backdrop-blur"
           style={{ left: hover.x + 14, top: hover.y + 14 }} dangerouslySetInnerHTML={{ __html: hover.html }} />

@@ -47,11 +47,12 @@ export function StatusPanel({ state, onOpen, hasCase }: { state: State; onOpen: 
             <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor={state.leak.alert ? "#ff4d4f" : "#7dd3fc"} stopOpacity={0.55} /><stop offset="100%" stopColor="#7dd3fc" stopOpacity={0} /></linearGradient>
           </defs>
           <XAxis dataKey="t" hide /><YAxis hide domain={[0, "dataMax"]} />
-          <ReferenceLine y={state.leak.threshold_gal_per_day} stroke="rgba(255,255,255,0.35)" strokeDasharray="4 4" />
+          <ReferenceLine y={state.leak.threshold_gal_per_day} stroke="rgba(255,255,255,0.35)" strokeDasharray="4 4"
+            label={{ value: "alarm", position: "insideBottomLeft", fill: "rgba(255,255,255,0.5)", fontSize: 10 }} />
           <Area dataKey="v" type="monotone" stroke={state.leak.alert ? "#ff6b6b" : "#7dd3fc"} strokeWidth={2} fill="url(#g)" isAnimationActive={false} />
         </AreaChart>
       </ChartContainer>
-      <div className="mt-1 text-[11px] text-white/40">Last 14 days · dashed line = alarm level</div>
+      <div className="mt-1 flex justify-between text-[11px] text-white/40"><span>{data[0]?.t}</span><span>water added per day, last 14 days</span><span>{data.at(-1)?.t}</span></div>
       {(state.leak.alert || hasCase) && (
         <Button onClick={onOpen} className="mt-4 h-11 w-full rounded-xl bg-white text-black hover:bg-white/90">{hasCase ? "Open the case" : "Start a case"}</Button>
       )}
@@ -168,8 +169,22 @@ function Ctl({ label, value, children }: { label: string; value: string; childre
   return <div><div className="mb-2 flex justify-between text-[13px]"><span className="text-white/70">{label}</span><span className="font-semibold tabular-nums">{value}</span></div>{children}</div>
 }
 
+function Delta({ now, prev, money: m, goodDown }: { now: number; prev?: number; money?: boolean; goodDown?: boolean }) {
+  if (prev === undefined || prev === now) return null
+  const d = now - prev, good = goodDown ? d < 0 : d > 0
+  return (
+    <motion.span key={now} initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}
+      className={cn("ml-2 rounded-md px-1.5 py-0.5 text-[11px] font-medium", good ? "bg-emerald-500/15 text-emerald-300" : "bg-red-500/15 text-red-300")}>
+      {d > 0 ? "+" : "−"}{m ? money(Math.abs(d)) : fmt(Math.abs(d))}
+    </motion.span>
+  )
+}
+
 export function PlanResult({ plan, inputs }: { plan: Plan | null; inputs: PlanIn }) {
   const [names, setNames] = useState({ d: "", f: "" })
+  const [prev, setPrev] = useState<Plan | null>(null)
+  const [cur, setCur] = useState<Plan | null>(null)
+  useEffect(() => { if (plan && plan !== cur) { setPrev(cur); setCur(plan) } }, [plan])
   const [alert, setAlert] = useState<Alert | null>(null)
   const [comms, setComms] = useState("")
   const [all, setAll] = useState(false)
@@ -191,9 +206,9 @@ export function PlanResult({ plan, inputs }: { plan: Plan | null; inputs: PlanIn
     <>
       <Glass className="w-[380px] p-5">
         <div className="grid grid-cols-2 gap-4">
-          <Stat label="Rental cost / day"><CountUp value={plan.cost_usd_per_day} prefix="$" /></Stat>
-          <Stat label="Buildings open"><CountUp value={plan.kept_open} /><span className="text-white/40"> / {plan.kept_open + plan.closed}</span></Stat>
-          <Stat label="Rented chillers"><CountUp value={plan.rented_units} /></Stat>
+          <Stat label="Rental cost / day"><CountUp value={plan.cost_usd_per_day} prefix="$" /><Delta now={plan.cost_usd_per_day} prev={prev?.cost_usd_per_day} money goodDown /></Stat>
+          <Stat label="Buildings open"><CountUp value={plan.kept_open} /><span className="text-white/40"> / {plan.kept_open + plan.closed}</span><Delta now={plan.kept_open} prev={prev?.kept_open} /></Stat>
+          <Stat label="Rented chillers"><CountUp value={plan.rented_units} /><Delta now={plan.rented_units} prev={prev?.rented_units} goodDown /></Stat>
           <Stat label="Diesel / day"><CountUp value={plan.diesel_gal_per_day} suffix=" gal" /></Stat>
         </div>
         <div className="mt-5 text-[12px] text-white/55">vs. UW's estimated cost in 2026</div>

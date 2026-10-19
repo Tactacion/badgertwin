@@ -24,10 +24,17 @@ export interface Geo {
   plants: FC<{ plant_id: string; name: string }>
   hubs: FC<{ node_id: string }>
 }
-export interface FeedItem { at: string; agent: string; name: string; text: string; level: "info" | "watch" | "act"; live?: boolean }
+export interface FeedItem { at: string; agent: string; name: string; text: string; level: "info" | "watch" | "act"; live?: boolean; action?: { label: string; do: string } | null }
+export interface Point { t: string; v: number }
+export interface History {
+  kind: "building" | "pipe"; id: string; name?: string; use?: string; tons?: number; limit_f?: number; affected?: boolean; status_2026?: string
+  patient_care?: boolean; animal_research?: boolean; pipe?: string; indoor?: Point[]; flow: Point[]; pressure?: Point[]
+  diameter?: number; install_year?: number; material?: string; depth_ft?: number; role?: string; from_node?: string; to_node?: string
+  risk?: number; health?: Risk; drivers?: string
+}
 export interface WorkOrder { id: string; status: string; approved_by: string | null; type: string; priority: string; crew: string; parts: string; valves_to_close: string[]; steps: string[]; safety: string; note: string }
 export interface PlanBuilding { building_id: string; name: string; use: string; weight: number; need_tons: number; plant_tons: number; rental_tons: number; served_pct: number; status: "open" | "closed"; peak_indoor_f: number | null; max_indoor_f: number; why: string }
-export interface Placement { site_id: string; lat: number; lon: number; near: string; units: number; unit_tons: number; usd_per_day: number }
+export interface Placement { site_id: string; lat: number; lon: number; near: string; units: number; unit_tons: number; usd_per_day: number; feeds: { building: string; tons: number }[] }
 export interface Plan {
   id?: string; solver: string; solve_ms: number; plant_capacity_tons: number; peak_hour: string; peak_outdoor_f: number; east_demand_tons: number
   buildings: PlanBuilding[]; placements: Placement[]; cost_usd_per_day: number; diesel_gal_per_day: number; co2_t_per_day: number
@@ -58,6 +65,7 @@ export const api = {
   approvePlan: (id: string, approvers: Record<string, string>) => call<{ plan: Plan & { approvals: Record<string, { name: string }> }; missing: string[]; alert?: Alert }>(`/api/plans/${id}/approve`, { approvers }),
   approveAlert: (id: string, approver: string, body: string) => call<Alert>(`/api/alerts/${id}/approve`, { approver, body }),
   repairs: (budget: number) => call<{ ranking: RepairRow[]; request: string; selected_cost_usd: number; selected_benefit_usd: number; n_selected: number }>(`/api/repairs?budget_usd=${budget}`),
+  history: (id: string, t: string) => call<History>(`/api/history/${encodeURIComponent(id)}?t=${encodeURIComponent(t)}`),
   ask: (question: string, t: string) => call<{ answer: string; citations: { title: string; url: string }[] }>("/api/ask", { question, t }),
   sources: () => call<{ sources: { url: string; title: string; publisher: string; date: string; what_it_supports: string }[] }>("/api/sources"),
   audit: () => call<{ audit: { at: string; actor: string; action: string; object_id: string }[] }>("/api/audit"),

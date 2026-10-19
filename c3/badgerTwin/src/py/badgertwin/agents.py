@@ -212,10 +212,10 @@ def agent_feed(ds: Dataset, det, as_of, plan_fn=None) -> list[dict]:
     t = pd.Timestamp(as_of)
     ev: list[dict] = []
 
-    def add(at, agent, text, level="info"):
+    def add(at, agent, text, level="info", action=None):
         at = pd.Timestamp(at)
         if at <= t:
-            ev.append(dict(at=str(at), agent=agent, name=AGENTS[agent], text=text, level=level))
+            ev.append(dict(at=str(at), agent=agent, name=AGENTS[agent], text=text, level=level, action=action))
 
     add("2026-06-01 00:00", "watcher", "Watching 142 sensors across 3 plants and 50 buildings.")
     fa = ds.events.set_index("kind").loc["false_alarm"]
@@ -225,11 +225,12 @@ def agent_feed(ds: Dataset, det, as_of, plan_fn=None) -> list[dict]:
     first = scan["first_alert_at"]
     if first:
         s = det.at(first)
-        add(first, "watcher", "Charter plant is adding more water than normal, and it keeps rising. Opening a case.", "watch")
+        add(first, "watcher", "Charter plant is adding more water than normal, and it keeps rising. Opening a case.", "watch",
+            dict(label="Start the case", do="open_case"))
         add(pd.Timestamp(first) + pd.Timedelta(minutes=5), "detective",
             f"Top suspect: {s.top3[0].pipe_id}, a 48-inch pipe from 1966. Same kind of pipe failed in 1980.", "watch")
         add(pd.Timestamp(first) + pd.Timedelta(minutes=10), "dispatcher",
-            "Drafted a repair order. Waiting for a supervisor to approve.", "watch")
+            "Drafted a repair order. Waiting for a supervisor to approve.", "watch", dict(label="Review", do="tab:incident"))
         rate = det.rate
         for gal in (25_000, 60_000):
             hit = rate[(rate.index > pd.Timestamp(first)) & (rate > gal)]
@@ -239,7 +240,7 @@ def agent_feed(ds: Dataset, det, as_of, plan_fn=None) -> list[dict]:
     burst = det.burst[det.burst].index
     if len(burst):
         b = burst[0]
-        add(b, "watcher", "Pipe burst. Water is pouring out. Shut the valves now.", "act")
+        add(b, "watcher", "Pipe burst. Water is pouring out. Shut the valves now.", "act", dict(label="Show me", do="fly:leak"))
         add("2026-06-17 20:00", "watcher", "Valves closed. 34 east-campus buildings now get less cooling.", "act")
         if plan_fn:
             for when, why in (("2026-06-17 20:30", "Cooling plan ready"), ("2026-07-13 00:00", "Heat wave coming. New plan")):
@@ -249,6 +250,6 @@ def agent_feed(ds: Dataset, det, as_of, plan_fn=None) -> list[dict]:
                     rent = (f"rent {n} chiller{'s' if n != 1 else ''} (${p['cost_usd_per_day']:,}/day)" if n
                             else "no rented chillers needed while it's mild")
                     add(when, "planner", f"{why}: {rent}, keep {p['kept_open']} buildings open"
-                                         + (f", close {closed}." if closed else "."), "watch")
+                                         + (f", close {closed}." if closed else "."), "watch", dict(label="Open plan", do="tab:plan"))
     add("2026-08-10 06:00", "watcher", "Pipe fixed. All buildings back to normal.", "info")
     return sorted(ev, key=lambda e: e["at"])

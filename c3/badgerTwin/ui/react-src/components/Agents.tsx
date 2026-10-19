@@ -10,7 +10,7 @@ const ICON: Record<string, any> = { watcher: Eye, detective: Search, dispatcher:
 const ROLE: Record<string, string> = { watcher: "watches sensors", detective: "finds the cause", dispatcher: "writes repair orders", planner: "plans cooling", messenger: "drafts campus alerts", librarian: "answers questions" }
 const LEVEL = { info: "border-white/10", watch: "border-amber-400/40", act: "border-red-500/50" }
 
-export function Agents({ feed, t, question, setQuestion }: { feed: FeedItem[]; t: string; question: string; setQuestion: (q: string) => void }) {
+export function Agents({ feed, t, question, setQuestion, onAction }: { feed: FeedItem[]; t: string; question: string; setQuestion: (q: string) => void; onAction: (a: string) => void }) {
   const [answer, setAnswer] = useState<{ q: string; a: string; cites: { title: string; url: string }[] } | null>(null)
   const [busy, setBusy] = useState(false)
   const list = useRef<HTMLDivElement>(null)
@@ -57,6 +57,10 @@ export function Agents({ feed, t, question, setQuestion }: { feed: FeedItem[]; t
                   <span className="ml-auto tabular-nums">{f.live ? "just now" : niceTime(f.at)}</span>
                 </div>
                 <div className="mt-1 text-[13px] leading-snug text-white/90">{f.text}</div>
+                {f.action && (
+                  <button onClick={() => onAction(f.action!.do)}
+                    className="mt-2 rounded-lg bg-white px-2.5 py-1 text-[12px] font-medium text-black transition hover:bg-white/85">{f.action.label} →</button>
+                )}
               </motion.div>
             )
           })}

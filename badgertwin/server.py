@@ -183,6 +183,38 @@ def pipe_flows(d: Dataset, w: pd.Series, closed: set[str]) -> dict:
     return out
 
 
+@app.get("/api/history/{asset_id}")
+def history(asset_id: str, t: str | None = None, days: int = 7):
+    """Last few days for one building or pipe, for the detail panel."""
+    d = ds()
+    now = _t(t)
+    w = d.wide.loc[now - pd.Timedelta(days=max(1, min(days, 30))):now]
+    def series(sid: str, every: str = "3h"):
+        if sid not in w:
+            return []
+        s = w[sid].resample(every).mean().dropna()
+        return [dict(t=str(i)[5:16], v=round(float(v), 2)) for i, v in s.items()]
+    if asset_id in set(d.buildings.building_id):
+        b = d.building(asset_id)
+        lateral = f"CW-L{asset_id[1:]}"
+        return clean(dict(kind="building", id=asset_id, name=b["name"], use=b.use, tons=int(b.design_cooling_tons),
+                          limit_f=float(b.max_indoor_temp_f), affected=bool(b.affected_2026), status_2026=b.status_2026,
+                          patient_care=bool(b.patient_care), animal_research=bool(b.animal_research),
+                          pipe=lateral, indoor=series(f"S-TIN-{asset_id}"), flow=series(f"S-BFLOW-{asset_id}")))
+    if asset_id in set(d.pipes.pipe_id):
+        p = d.pipe(asset_id)
+        r = health_scores(d, as_of=now).set_index("asset_id").loc[asset_id]
+        sid = "S-FLOW-CW-M01a" if asset_id == "CW-M01" else f"S-FLOW-{asset_id}"
+        if p.role == "lateral":
+            sid = f"S-BFLOW-{p.to_node}"
+        ends = [n for n in (p.from_node, p.to_node) if f"S-PRES-{n}" in w]
+        return clean(dict(kind="pipe", id=asset_id, diameter=int(p.diameter_in), install_year=int(p.install_year),
+                          material=p.material, depth_ft=float(p.depth_ft), role=p.role, from_node=p.from_node,
+                          to_node=p.to_node, risk=float(r.risk), health=r.label, drivers=r.drivers,
+                          flow=series(sid), pressure=series(f"S-PRES-{ends[0]}") if ends else []))
+    raise HTTPException(404, "Unknown building or pipe")
+
+
 @app.get("/api/detector-test")
 def detector_test():
     return clean(detector().scan())

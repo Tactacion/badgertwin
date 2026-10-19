@@ -12,6 +12,8 @@ import { Timeline } from "@/components/Timeline"
 import { Agents } from "@/components/Agents"
 import { FixPanel, IncidentPanel, PlanControls, PlanResult, StatusPanel, body, type PlanIn } from "@/components/Panels"
 import { InfoSheet } from "@/components/InfoSheet"
+import { DetailPanel } from "@/components/DetailPanel"
+import { CommandBar } from "@/components/CommandBar"
 
 type Tab = "live" | "incident" | "plan" | "fix"
 
@@ -44,6 +46,7 @@ export default function App() {
   const [planIn, setPlanIn] = useState<PlanIn>({ temp: 95, outage: 0, budget: 0, smart: true })
   const [plan, setPlan] = useState<Plan | null>(null)
   const [question, setQuestion] = useState("")
+  const [selected, setSelected] = useState<string | null>(q.get("sel"))
   const mapRef = useRef<MapHandle>(null)
   const lastKind = useRef<string>("normal")
   const t = hours[idx] ?? ""
@@ -106,15 +109,20 @@ export default function App() {
     } catch (e: any) { toast.error(e.message) }
   }, [incidentId, t])
 
-  const onPick = useCallback((w: { kind: string; id: string; name: string }) => {
-    setQuestion(w.kind === "pipe" ? `How old is ${w.id} and what has failed near it?` : `Tell me about ${w.name}?`)
-  }, [])
+  const pick = useCallback((id: string) => { setSelected(id); mapRef.current?.flyToId(id) }, [])
+  const onPick = useCallback((w: { kind: string; id: string; name: string }) => { setSelected(w.id) }, [])
+  const flyLeak = useCallback(() => mapRef.current?.flyToId("CW-M01"), [])
+  const onAction = useCallback((a: string) => {
+    if (a === "open_case") openCase()
+    else if (a.startsWith("tab:")) setTab(a.slice(4) as Tab)
+    else if (a === "fly:leak") flyLeak()
+  }, [openCase, flyLeak])
 
   const tabs = useMemo(() => [["live", "Live"], ["incident", "Case"], ["plan", "Emergency plan"], ["fix", "Fix first"]] as const, [])
 
   return (
     <div className="dark fixed inset-0 overflow-hidden bg-[#07090c] font-sans text-white">
-      <CampusMap ref={mapRef} geo={geo} state={state} plan={tab === "plan" ? plan : null} mode={tab === "plan" ? "plan" : tab === "fix" ? "fix" : "live"} basemap={basemap} startOnCampus={!intro} onPick={onPick} />
+      <CampusMap ref={mapRef} geo={geo} state={state} plan={tab === "plan" ? plan : null} mode={tab === "plan" ? "plan" : tab === "fix" ? "fix" : "live"} basemap={basemap} startOnCampus={!intro} selected={selected} onPick={onPick} />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/70 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/70 to-transparent" />
 
@@ -132,6 +140,7 @@ export default function App() {
           </TabsList>
         </Tabs>
         <div className="pointer-events-auto flex items-center gap-2">
+          <CommandBar geo={geo} onTab={setTab} onMoment={(m) => { const i = hours.indexOf(m); if (i >= 0) { setIdx(i); setTab("live") } }} onPick={pick} />
           <ToggleGroup value={[basemap]} onValueChange={(v: any) => v?.[0] && setBasemap(v[0])} className="rounded-full border border-white/10 bg-black/45 p-0.5 backdrop-blur-xl">
             <ToggleGroupItem value="satellite" aria-label="Satellite" className="size-8 rounded-full data-[pressed]:bg-white/20"><Globe2 className="size-4" /></ToggleGroupItem>
             <ToggleGroupItem value="dark" aria-label="Map" className="size-8 rounded-full data-[pressed]:bg-white/20"><MapIcon className="size-4" /></ToggleGroupItem>
@@ -152,7 +161,8 @@ export default function App() {
       <div className="pointer-events-none absolute right-5 top-20 z-10">
         <AnimatePresence mode="wait">
           {tab === "plan" ? <motion.div key="pr"><PlanResult plan={plan} inputs={planIn} /></motion.div>
-            : <motion.div key="ag"><Agents feed={feed} t={t} question={question} setQuestion={setQuestion} /></motion.div>}
+            : selected ? <motion.div key={"d" + selected}><DetailPanel id={selected} t={t} onClose={() => setSelected(null)} onAsk={(q) => { setSelected(null); setQuestion(q) }} /></motion.div>
+            : <motion.div key="ag"><Agents feed={feed} t={t} question={question} setQuestion={setQuestion} onAction={onAction} /></motion.div>}
         </AnimatePresence>
       </div>
       {(tab === "live" || tab === "incident") && meta && (
@@ -160,7 +170,7 @@ export default function App() {
           <Timeline hours={hours} idx={idx} setIdx={(i) => i >= 0 && setIdx(i)} playing={playing} setPlaying={setPlaying} speed={speed} setSpeed={setSpeed} outdoor={state?.outdoor_f ?? null} />
         </div>
       )}
-      <div className="pointer-events-none absolute bottom-1.5 left-5 z-10 text-[10.5px] text-white/40">Simulated data built from public facts · pipe routes are approximate</div>
+      <div className="pointer-events-none absolute bottom-1.5 left-6 z-10 text-[10.5px] text-white/40">Simulated data built from public facts · pipe routes are approximate</div>
 
       <AnimatePresence>{intro && <Intro onStart={() => { setIntro(false); mapRef.current?.intro(); setTimeout(() => setPlaying(true), 6200) }} />}</AnimatePresence>
       <Toaster position="top-center" theme="dark" richColors />
