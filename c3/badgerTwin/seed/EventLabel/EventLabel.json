@@ -1,0 +1,38 @@
+[
+ {
+  "eventId": "EV-01",
+  "start": "2026-06-03 02:00",
+  "end": "2026-06-03 05:00",
+  "kind": "false_alarm",
+  "assetId": "J03",
+  "note": "Sensor glitch injected; detector should NOT open an incident",
+  "id": "EV-01"
+ },
+ {
+  "eventId": "EV-02",
+  "start": "2026-06-07 06:00:00",
+  "end": "2026-06-17 14:00:00",
+  "kind": "slow_leak",
+  "assetId": "CW-M01",
+  "note": "Concrete coating spalls off 48-in steel main; leak grows ~0\u219270 gpm (1980 pattern)",
+  "id": "EV-02"
+ },
+ {
+  "eventId": "EV-03",
+  "start": "2026-06-17 14:00:00",
+  "end": "2026-06-17 20:00:00",
+  "kind": "burst",
+  "assetId": "CW-M01",
+  "note": "Main ruptures (~4,500 gpm loss) on the hot afternoon of June 17",
+  "id": "EV-03"
+ },
+ {
+  "eventId": "EV-04",
+  "start": "2026-06-17 20:00:00",
+  "end": "2026-08-10 06:00:00",
+  "kind": "isolation",
+  "assetId": "CW-M01",
+  "note": "Segment valved off; east loop fed only via crossovers \u2192 reduced cooling",
+  "id": "EV-04"
+ }
+]

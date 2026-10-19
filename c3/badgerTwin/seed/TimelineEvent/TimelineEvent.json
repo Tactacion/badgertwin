@@ -1,0 +1,152 @@
+[
+ {
+  "date": "2005-12-02",
+  "datePrecision": "day (inferred: \"Friday morning\" in Dec 5 2005 article)",
+  "event": "Two chilled-water coils in Engineering Centers Building froze in parallel air-handling systems; top floor flooded; plant staff detected loss of chilled water",
+  "numbers": "~30,000 gallons (UW News and Daily Cardinal)",
+  "eventStatus": "reported",
+  "sourceUrl": "https://www.dailycardinal.com/article/2005/12/faulty-water-coil-floods-uw-building",
+  "verified": true,
+  "notes": "Daily Cardinal: \"A mechanical flaw caused a 30,000-gallon spill ... Friday morning.\" Separate statement elsewhere of ~55,000 gallons is from a search snippet and conflicts; not used. Cause: coils froze, alarms did not sound.",
+  "id": "TimelineEvent-0001"
+ },
+ {
+  "date": "1980-06-09",
+  "datePrecision": "day (from UW News release snippet)",
+  "event": "Leak found in 48-inch chilled water main from Charter Street plant; central AC shut to 33 campus buildings for at least a week",
+  "numbers": "48-inch main; 33 buildings; water losses rose from normal 9,000 gal/day to 100,000 gal/day; 16-ft section ~8 ft underground",
+  "eventStatus": "reported (search snippet only)",
+  "sourceUrl": "https://search.library.wisc.edu/digital/APB2AOOBDBPO2U8S/text/AP5IMH6RJZHNGR8Y",
+  "verified": false,
+  "notes": "Page is access-restricted; facts come only from a search-result summary. Do not treat as verified. Steam-tunnel detail not confirmed.",
+  "id": "TimelineEvent-0002"
+ },
+ {
+  "date": "2019-01 (polar vortex period)",
+  "datePrecision": "approximate",
+  "event": "Engineering Centers flood tied to 2019 cold snap",
+  "eventStatus": "not_found",
+  "verified": false,
+  "notes": "No source found in searches. Do not use until a source is located. The Dec 2005 Engineering Centers flood is the only documented Engineering Centers water event found.",
+  "id": "TimelineEvent-0003"
+ },
+ {
+  "date": "2026-02",
+  "datePrecision": "approximate (month only)",
+  "event": "Associate VC for FP&M Cindy Torstveit tells Regents UW-Madison faces \"a tsunami of building issues\"; says ~$2.5B deferred maintenance (quote reported July 2026)",
+  "numbers": "$2.5B deferred maintenance",
+  "eventStatus": "reported",
+  "sourceUrl": "https://captimes.com/news/education/uw-madison-plans-to-fix-broken-ac-before-students-return-this-fall/article_1d010c5c-8d20-46f7-ad04-0af8da2f1ba5.html",
+  "verified": true,
+  "notes": "Cap Times says Torstveit \"previously told the Regents in February\"; exact Regents date not confirmed. Total excludes underground utilities per UW spokesperson Lori Wilson.",
+  "id": "TimelineEvent-0004"
+ },
+ {
+  "date": "2026-06-04",
+  "datePrecision": "day",
+  "event": "Board of Regents Capital Planning and Budget Committee approves ~$3M to repair chilled water system in Engineering Centers Building",
+  "numbers": "nearly $3 million",
+  "eventStatus": "reported",
+  "sourceUrl": "https://www.wmtv15news.com/2026/07/01/board-regents-approved-millions-aging-infrastructure-weeks-before-uw-madison-ac-issues-records-show/",
+  "verified": true,
+  "notes": "WMTV dates approval June 4 but also says approval came \"26 days before UW-Madison AC issues\" (which would be ~May 22). Conflict unresolved; June 4 used.",
+  "id": "TimelineEvent-0005"
+ },
+ {
+  "date": "2026-06-04",
+  "datePrecision": "day",
+  "event": "Charmany Farms Veterinary Medicine Building: ~$3M approved to replace failing chiller system; chiller replaced by rented chiller on temporary piping and hoses",
+  "numbers": "nearly $3 million",
+  "eventStatus": "reported",
+  "sourceUrl": "https://www.wmtv15news.com/2026/07/01/board-regents-approved-millions-aging-infrastructure-weeks-before-uw-madison-ac-issues-records-show/",
+  "verified": true,
+  "notes": "This is the \"Charmany chiller\" item. Article does not say whether replacement construction has started.",
+  "id": "TimelineEvent-0006"
+ },
+ {
+  "date": "2026-06-17",
+  "datePrecision": "day",
+  "event": "Major chilled water main supply line ruptures near Charter Street plant (one of three heating/cooling plants); campus cooling reduced",
+  "numbers": "pipe 4 ft diameter, ~20 ft underground; repairs took nearly two months",
+  "eventStatus": "reported",
+  "sourceUrl": "https://news.wisc.edu/campus-cooling-issues/",
+  "verified": true,
+  "notes": "FAQ: \"On June 17, a chilled water main supply line at one of the three heating and cooling plants...\"",
+  "id": "TimelineEvent-0007"
+ },
+ {
+  "date": "2026-06-26",
+  "datePrecision": "day",
+  "event": "UW posts first campus cooling update: repairs expected at least several weeks; reduced cooling begins",
+  "eventStatus": "reported",
+  "sourceUrl": "https://news.wisc.edu/campus-building-cooling-issues-update-and-response/",
+  "verified": true,
+  "notes": "Raw: raw/articles/news_wisc_update437.txt",
+  "id": "TimelineEvent-0008"
+ },
+ {
+  "date": "2026-06-28",
+  "datePrecision": "day",
+  "event": "UW update: temperature adjustments begin; closures announced; repair \"expected to take at least one month\"",
+  "numbers": "at least one month",
+  "eventStatus": "reported",
+  "sourceUrl": "https://news.wisc.edu/update-important-details-regarding-campus-cooling-issues/",
+  "verified": true,
+  "notes": "Raw: raw/articles/news_wisc_update439.txt. Channel 3000 cites a Sunday morning statement by Robert Cramer.",
+  "id": "TimelineEvent-0009"
+ },
+ {
+  "date": "2026-06-29",
+  "datePrecision": "day",
+  "event": "34 buildings listed; 23 closed to the public and locked end of business day; 11 partially closed. Employees relocated.",
+  "numbers": "34 buildings (23 closed + 11 partial); ~30 temporary chillers installed",
+  "eventStatus": "reported",
+  "sourceUrl": "https://www.channel3000.com/news/broken-chilled-water-line-disrupts-cooling-in-34-uw-madison-buildings/article_f4b44405-ccf7-4ace-910a-d938657f595f.html",
+  "verified": true,
+  "notes": "Building-level list in curated/affected_buildings_2026.csv. Channel 3000 article date not shown in saved HTML; 23/11 split also in WMTV.",
+  "id": "TimelineEvent-0010"
+ },
+ {
+  "date": "2026-06-30",
+  "datePrecision": "day",
+  "event": "Badger Herald: \"over 20 buildings\" to be temporarily closed; some open with limited cooling",
+  "numbers": "over 20 (early count)",
+  "eventStatus": "reported",
+  "sourceUrl": "https://badgerherald.com/news/campus/2026/06/30/uw-campus-cooling-issues-lead-to-closure-of-multiple-campus-buildings/",
+  "verified": true,
+  "notes": "Early count, superseded by 34 total.",
+  "id": "TimelineEvent-0011"
+ },
+ {
+  "date": "2026-07-16",
+  "datePrecision": "day",
+  "event": "UW system official Deej Lundgren tells Regents damaged pipe section removed; permanent replacement underway; cost still being calculated; Engineering Drive utility project to support repair",
+  "eventStatus": "reported",
+  "sourceUrl": "https://captimes.com/news/education/uw-madison-plans-to-fix-broken-ac-before-students-return-this-fall/article_1d010c5c-8d20-46f7-ad04-0af8da2f1ba5.html",
+  "verified": true,
+  "notes": "Cap Times article on Regents virtual meeting July 16.",
+  "id": "TimelineEvent-0012"
+ },
+ {
+  "date": "2026-08-10",
+  "datePrecision": "day",
+  "event": "All closed and partially closed buildings fully reopened; mail, packages, parking normal",
+  "numbers": "34 buildings reopened (per FAQ \"all closed and partially closed\")",
+  "eventStatus": "reported",
+  "sourceUrl": "https://news.wisc.edu/campus-cooling-issues/",
+  "verified": true,
+  "notes": "FAQ updated Aug 9; mobile chilling units remain into September.",
+  "id": "TimelineEvent-0013"
+ },
+ {
+  "date": "2026-10-08",
+  "datePrecision": "day",
+  "event": "UW discloses total cost of cooling problems ($15.8M); Regents vote to reallocate $40M to related Engineering Drive utilities project",
+  "numbers": "$15.8M total; $40M reallocated",
+  "eventStatus": "reported",
+  "sourceUrl": "https://captimes.com/news/education/uw-madisons-summer-air-conditioning-woes-cost-15-8-million/article_ae088b27-5613-41ea-ae92-b02cb70ccd1e.html",
+  "verified": true,
+  "notes": "Cap Times: \"On Oct. 8, the University of Wisconsin-Madison revealed...\"",
+  "id": "TimelineEvent-0014"
+ }
+]

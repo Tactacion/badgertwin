@@ -1,0 +1,62 @@
+[
+ {
+  "input": "temp_chiller_units",
+  "range": "28-32",
+  "basis": "UW: 'about 30'",
+  "id": "CostAssumption-0001"
+ },
+ {
+  "input": "unit_size_tons",
+  "range": "300-500",
+  "basis": "assumption",
+  "id": "CostAssumption-0002"
+ },
+ {
+  "input": "chiller_rent_usd_per_week_500t",
+  "range": "8666 x 0.9-1.5 emergency multiplier",
+  "basis": "KWIPPED listing",
+  "id": "CostAssumption-0003"
+ },
+ {
+  "input": "chiller_kw_per_ton",
+  "range": "0.95-1.30",
+  "basis": "typical air-cooled",
+  "id": "CostAssumption-0004"
+ },
+ {
+  "input": "avg_load",
+  "range": "55-85%",
+  "basis": "assumption",
+  "id": "CostAssumption-0005"
+ },
+ {
+  "input": "generator_rent_usd_per_week",
+  "range": "750kW 4800 / 1000kW 5640, x2 for 24/7",
+  "basis": "published rate card",
+  "id": "CostAssumption-0006"
+ },
+ {
+  "input": "diesel_gal_per_h_750kW",
+  "range": "27.4 @50%, 39.3 @75%",
+  "basis": "generator fuel chart",
+  "id": "CostAssumption-0007"
+ },
+ {
+  "input": "diesel_usd_per_gal",
+  "range": "4.40-5.10",
+  "basis": "FRED GASDESW (raw/diesel_us_weekly_fred_GASDESW.csv)",
+  "id": "CostAssumption-0008"
+ },
+ {
+  "input": "co2_kg_per_gal_diesel",
+  "range": "10.21",
+  "basis": "EPA",
+  "id": "CostAssumption-0009"
+ },
+ {
+  "input": "setup_usd_per_unit",
+  "range": "20k-70k",
+  "basis": "assumption",
+  "id": "CostAssumption-0010"
+ }
+]

@@ -1,0 +1,5 @@
+event_id,start,end,kind,asset_id,note
+EV-01,2026-06-03 02:00,2026-06-03 05:00,false_alarm,J03,Sensor glitch injected; detector should NOT open an incident
+EV-02,2026-06-07 06:00:00,2026-06-17 14:00:00,slow_leak,CW-M01,Concrete coating spalls off 48-in steel main; leak grows ~0→70 gpm (1980 pattern)
+EV-03,2026-06-17 14:00:00,2026-06-17 20:00:00,burst,CW-M01,"Main ruptures (~4,500 gpm loss) on the hot afternoon of June 17"
+EV-04,2026-06-17 20:00:00,2026-08-10 06:00:00,isolation,CW-M01,Segment valved off; east loop fed only via crossovers → reduced cooling

@@ -1,0 +1,9 @@
+// One row per approval or edit. Never deleted except by "Reset demo".
+entity type AuditLog schema name "BT_AUDIT" {
+  at: datetime
+  actor: string
+  action: string
+  objectId: string
+  before: json
+  after: json
+}

@@ -1,0 +1,16 @@
+Phase 1 only. Do not build any screens except one Data Health page.
+
+The attached CSVs are our full dataset (simulated, built from public facts). Do not search the
+filesystem for other files; use only what is attached to this message.
+
+1. Create one entity Type per CSV, with fields named after the CSV columns (camelCase):
+   Plant (plants.csv), Chiller, Pump, NetworkNode, PipeSegment, Valve, Building, Sensor (sensors.csv),
+   SensorReading (sensor_readings_core_hourly.csv + sensor_readings_buildings_6h.csv: timestamp,
+   sensorId, value), WeatherHour, WorkOrder, TempChillerSite, EventLabel, CostAssumption,
+   CostModelSummary, ResearchDollars, BuildingResearchMap.
+   Keep it simple: plain entity types with a sensorId string on SensorReading is fine for now.
+2. Load every CSV as seed data. Skip rows with an empty value.
+3. Add one page "Data Health": a table of row counts per Type, and a line chart of SensorReading.value
+   for sensorId = "S-MKUP-P1" (Charter make-up water, gal/h) from 2026-06-01 to 2026-06-20.
+   Grey footer: "Simplified, simulated data built from public facts".
+4. Stop. List the files you created and any rows that failed to load.

@@ -1,0 +1,5 @@
+metric,p10,p50,p90,data_origin
+temp_cooling_cost_usd_per_day,133651.6,162291.3,196394.5,MODELLED from market prices (see cost_assumptions.csv)
+diesel_gal_per_day,13537.6,18002.5,23588.7,MODELLED from market prices (see cost_assumptions.csv)
+co2_tonnes_per_day,138.2,183.8,240.8,MODELLED from market prices (see cost_assumptions.csv)
+days_10M_lasts,50.9,61.6,74.8,MODELLED from market prices (see cost_assumptions.csv)

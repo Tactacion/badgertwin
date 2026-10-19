@@ -1,0 +1,134 @@
+[
+ {
+  "chillerId": "P1-CH1",
+  "plantId": "P1",
+  "capacityTons": 8000,
+  "type": "steam turbine centrifugal",
+  "installYear": 2015,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.633,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P1-CH1"
+ },
+ {
+  "chillerId": "P1-CH2",
+  "plantId": "P1",
+  "capacityTons": 8500,
+  "type": "steam turbine centrifugal",
+  "installYear": 2015,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.587,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P1-CH2"
+ },
+ {
+  "chillerId": "P1-CH3",
+  "plantId": "P1",
+  "capacityTons": 4000,
+  "type": "electric centrifugal",
+  "installYear": 1998,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.728,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P1-CH3"
+ },
+ {
+  "chillerId": "P1-CH4",
+  "plantId": "P1",
+  "capacityTons": 4000,
+  "type": "electric centrifugal",
+  "installYear": 1991,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.789,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P1-CH4"
+ },
+ {
+  "chillerId": "P2-CH1",
+  "plantId": "P2",
+  "capacityTons": 3000,
+  "type": "steam turbine centrifugal",
+  "installYear": 1997,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.655,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P2-CH1"
+ },
+ {
+  "chillerId": "P2-CH2",
+  "plantId": "P2",
+  "capacityTons": 3000,
+  "type": "steam turbine centrifugal",
+  "installYear": 1997,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.753,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P2-CH2"
+ },
+ {
+  "chillerId": "P3-CH1",
+  "plantId": "P3",
+  "capacityTons": 5000,
+  "type": "electric centrifugal",
+  "installYear": 2005,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.707,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P3-CH1"
+ },
+ {
+  "chillerId": "P3-CH2",
+  "plantId": "P3",
+  "capacityTons": 5000,
+  "type": "electric centrifugal",
+  "installYear": 2005,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.63,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P3-CH2"
+ },
+ {
+  "chillerId": "P3-CH3",
+  "plantId": "P3",
+  "capacityTons": 5000,
+  "type": "electric centrifugal",
+  "installYear": 2005,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.663,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P3-CH3"
+ },
+ {
+  "chillerId": "P3-CH4",
+  "plantId": "P3",
+  "capacityTons": 5000,
+  "type": "electric centrifugal",
+  "installYear": 2005,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.731,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P3-CH4"
+ },
+ {
+  "chillerId": "P3-CH5",
+  "plantId": "P3",
+  "capacityTons": 5000,
+  "type": "electric centrifugal",
+  "installYear": 2012,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.602,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P3-CH5"
+ },
+ {
+  "chillerId": "P3-CH6",
+  "plantId": "P3",
+  "capacityTons": 5000,
+  "type": "electric centrifugal",
+  "installYear": 2012,
+  "designKwPerTon": 0.55,
+  "currentKwPerTon": 0.611,
+  "dataOrigin": "ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)",
+  "id": "P3-CH6"
+ }
+]

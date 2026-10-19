@@ -1,0 +1,8 @@
+// Drafted by the Campus alerts agent from an approved plan; approved by Communications.
+entity type CampusAlert schema name "BT_ALERT" {
+  planId: string
+  subject: string
+  body: string
+  status: string
+  approvedBy: string
+}

@@ -1,0 +1,29 @@
+[
+ {
+  "plantId": "P1",
+  "name": "Charter Street Heating & Cooling Plant",
+  "lat": 43.0703314,
+  "lon": -89.4051421,
+  "totalCapacityTons": 24500,
+  "dataOrigin": "locations OSM/Wikipedia; capacities ASSUMED to sum to >50,000 tons (UW News)",
+  "id": "P1"
+ },
+ {
+  "plantId": "P2",
+  "name": "Walnut Street Heating & Cooling Plant",
+  "lat": 43.0744031,
+  "lon": -89.4242481,
+  "totalCapacityTons": 6000,
+  "dataOrigin": "locations OSM/Wikipedia; capacities ASSUMED to sum to >50,000 tons (UW News)",
+  "id": "P2"
+ },
+ {
+  "plantId": "P3",
+  "name": "West Campus Cogeneration Facility",
+  "lat": 43.075,
+  "lon": -89.42389,
+  "totalCapacityTons": 30000,
+  "dataOrigin": "locations OSM/Wikipedia; capacities ASSUMED to sum to >50,000 tons (UW News)",
+  "id": "P3"
+ }
+]

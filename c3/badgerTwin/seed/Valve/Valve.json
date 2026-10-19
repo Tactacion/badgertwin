@@ -1,0 +1,308 @@
+[
+ {
+  "valveId": "V-01",
+  "pipeId": "CW-M01",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2019-06-07",
+  "dataOrigin": "SIMULATED",
+  "id": "V-01"
+ },
+ {
+  "valveId": "V-02",
+  "pipeId": "CW-M01",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2020-12-17",
+  "dataOrigin": "SIMULATED",
+  "id": "V-02"
+ },
+ {
+  "valveId": "V-03",
+  "pipeId": "CW-T04",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2022-09-20",
+  "dataOrigin": "SIMULATED",
+  "id": "V-03"
+ },
+ {
+  "valveId": "V-04",
+  "pipeId": "CW-T04",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2022-06-26",
+  "dataOrigin": "SIMULATED",
+  "id": "V-04"
+ },
+ {
+  "valveId": "V-05",
+  "pipeId": "CW-T05",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2019-08-15",
+  "dataOrigin": "SIMULATED",
+  "id": "V-05"
+ },
+ {
+  "valveId": "V-06",
+  "pipeId": "CW-T05",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2022-08-13",
+  "dataOrigin": "SIMULATED",
+  "id": "V-06"
+ },
+ {
+  "valveId": "V-07",
+  "pipeId": "CW-T06",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2020-01-19",
+  "dataOrigin": "SIMULATED",
+  "id": "V-07"
+ },
+ {
+  "valveId": "V-08",
+  "pipeId": "CW-T06",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2023-04-07",
+  "dataOrigin": "SIMULATED",
+  "id": "V-08"
+ },
+ {
+  "valveId": "V-09",
+  "pipeId": "CW-T07",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2024-09-22",
+  "dataOrigin": "SIMULATED",
+  "id": "V-09"
+ },
+ {
+  "valveId": "V-10",
+  "pipeId": "CW-T07",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2025-11-02",
+  "dataOrigin": "SIMULATED",
+  "id": "V-10"
+ },
+ {
+  "valveId": "V-11",
+  "pipeId": "CW-T08",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2020-06-26",
+  "dataOrigin": "SIMULATED",
+  "id": "V-11"
+ },
+ {
+  "valveId": "V-12",
+  "pipeId": "CW-T08",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2021-07-03",
+  "dataOrigin": "SIMULATED",
+  "id": "V-12"
+ },
+ {
+  "valveId": "V-13",
+  "pipeId": "CW-T09",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2025-03-17",
+  "dataOrigin": "SIMULATED",
+  "id": "V-13"
+ },
+ {
+  "valveId": "V-14",
+  "pipeId": "CW-T09",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2026-01-20",
+  "dataOrigin": "SIMULATED",
+  "id": "V-14"
+ },
+ {
+  "valveId": "V-15",
+  "pipeId": "CW-T10",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2022-02-27",
+  "dataOrigin": "SIMULATED",
+  "id": "V-15"
+ },
+ {
+  "valveId": "V-16",
+  "pipeId": "CW-T10",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2019-09-20",
+  "dataOrigin": "SIMULATED",
+  "id": "V-16"
+ },
+ {
+  "valveId": "V-17",
+  "pipeId": "CW-T11",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2022-01-16",
+  "dataOrigin": "SIMULATED",
+  "id": "V-17"
+ },
+ {
+  "valveId": "V-18",
+  "pipeId": "CW-T11",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2024-03-03",
+  "dataOrigin": "SIMULATED",
+  "id": "V-18"
+ },
+ {
+  "valveId": "V-19",
+  "pipeId": "CW-T12",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2019-04-20",
+  "dataOrigin": "SIMULATED",
+  "id": "V-19"
+ },
+ {
+  "valveId": "V-20",
+  "pipeId": "CW-T12",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2024-03-11",
+  "dataOrigin": "SIMULATED",
+  "id": "V-20"
+ },
+ {
+  "valveId": "V-21",
+  "pipeId": "CW-T13",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2021-07-18",
+  "dataOrigin": "SIMULATED",
+  "id": "V-21"
+ },
+ {
+  "valveId": "V-22",
+  "pipeId": "CW-T13",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2019-07-27",
+  "dataOrigin": "SIMULATED",
+  "id": "V-22"
+ },
+ {
+  "valveId": "V-23",
+  "pipeId": "CW-T14",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2020-12-30",
+  "dataOrigin": "SIMULATED",
+  "id": "V-23"
+ },
+ {
+  "valveId": "V-24",
+  "pipeId": "CW-T14",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2023-06-17",
+  "dataOrigin": "SIMULATED",
+  "id": "V-24"
+ },
+ {
+  "valveId": "V-25",
+  "pipeId": "CW-T15",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2020-08-24",
+  "dataOrigin": "SIMULATED",
+  "id": "V-25"
+ },
+ {
+  "valveId": "V-26",
+  "pipeId": "CW-T15",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2022-03-03",
+  "dataOrigin": "SIMULATED",
+  "id": "V-26"
+ },
+ {
+  "valveId": "V-27",
+  "pipeId": "CW-T16",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2022-07-14",
+  "dataOrigin": "SIMULATED",
+  "id": "V-27"
+ },
+ {
+  "valveId": "V-28",
+  "pipeId": "CW-T16",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2019-04-29",
+  "dataOrigin": "SIMULATED",
+  "id": "V-28"
+ },
+ {
+  "valveId": "V-29",
+  "pipeId": "CW-T17",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2019-10-02",
+  "dataOrigin": "SIMULATED",
+  "id": "V-29"
+ },
+ {
+  "valveId": "V-30",
+  "pipeId": "CW-T17",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2024-05-10",
+  "dataOrigin": "SIMULATED",
+  "id": "V-30"
+ },
+ {
+  "valveId": "V-31",
+  "pipeId": "CW-T18",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2020-10-21",
+  "dataOrigin": "SIMULATED",
+  "id": "V-31"
+ },
+ {
+  "valveId": "V-32",
+  "pipeId": "CW-T18",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2021-01-28",
+  "dataOrigin": "SIMULATED",
+  "id": "V-32"
+ },
+ {
+  "valveId": "V-33",
+  "pipeId": "CW-T19",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2022-03-20",
+  "dataOrigin": "SIMULATED",
+  "id": "V-33"
+ },
+ {
+  "valveId": "V-34",
+  "pipeId": "CW-T19",
+  "position": "open",
+  "type": "butterfly isolation",
+  "exercisedLast": "2023-12-17",
+  "dataOrigin": "SIMULATED",
+  "id": "V-34"
+ }
+]

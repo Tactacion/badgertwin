@@ -1,0 +1,83 @@
+[
+ {
+  "pumpId": "P1-PMP1",
+  "plantId": "P1",
+  "hp": 500,
+  "installYear": 1998,
+  "vibrationBaselineIps": 0.085,
+  "dataOrigin": "ASSUMED",
+  "id": "P1-PMP1"
+ },
+ {
+  "pumpId": "P1-PMP2",
+  "plantId": "P1",
+  "hp": 500,
+  "installYear": 2019,
+  "vibrationBaselineIps": 0.126,
+  "dataOrigin": "ASSUMED",
+  "id": "P1-PMP2"
+ },
+ {
+  "pumpId": "P1-PMP3",
+  "plantId": "P1",
+  "hp": 500,
+  "installYear": 1991,
+  "vibrationBaselineIps": 0.105,
+  "dataOrigin": "ASSUMED",
+  "id": "P1-PMP3"
+ },
+ {
+  "pumpId": "P2-PMP1",
+  "plantId": "P2",
+  "hp": 1000,
+  "installYear": 1991,
+  "vibrationBaselineIps": 0.121,
+  "dataOrigin": "ASSUMED",
+  "id": "P2-PMP1"
+ },
+ {
+  "pumpId": "P2-PMP2",
+  "plantId": "P2",
+  "hp": 500,
+  "installYear": 2019,
+  "vibrationBaselineIps": 0.087,
+  "dataOrigin": "ASSUMED",
+  "id": "P2-PMP2"
+ },
+ {
+  "pumpId": "P2-PMP3",
+  "plantId": "P2",
+  "hp": 750,
+  "installYear": 1998,
+  "vibrationBaselineIps": 0.094,
+  "dataOrigin": "ASSUMED",
+  "id": "P2-PMP3"
+ },
+ {
+  "pumpId": "P3-PMP1",
+  "plantId": "P3",
+  "hp": 750,
+  "installYear": 2005,
+  "vibrationBaselineIps": 0.118,
+  "dataOrigin": "ASSUMED",
+  "id": "P3-PMP1"
+ },
+ {
+  "pumpId": "P3-PMP2",
+  "plantId": "P3",
+  "hp": 750,
+  "installYear": 2005,
+  "vibrationBaselineIps": 0.082,
+  "dataOrigin": "ASSUMED",
+  "id": "P3-PMP2"
+ },
+ {
+  "pumpId": "P3-PMP3",
+  "plantId": "P3",
+  "hp": 1000,
+  "installYear": 2019,
+  "vibrationBaselineIps": 0.114,
+  "dataOrigin": "ASSUMED",
+  "id": "P3-PMP3"
+ }
+]

@@ -1,0 +1,11 @@
+input,range,basis
+temp_chiller_units,28-32,UW: 'about 30'
+unit_size_tons,300-500,assumption
+chiller_rent_usd_per_week_500t,8666 x 0.9-1.5 emergency multiplier,KWIPPED listing
+chiller_kw_per_ton,0.95-1.30,typical air-cooled
+avg_load,55-85%,assumption
+generator_rent_usd_per_week,"750kW 4800 / 1000kW 5640, x2 for 24/7",published rate card
+diesel_gal_per_h_750kW,"27.4 @50%, 39.3 @75%",generator fuel chart
+diesel_usd_per_gal,4.40-5.10,FRED GASDESW (raw/diesel_us_weekly_fred_GASDESW.csv)
+co2_kg_per_gal_diesel,10.21,EPA
+setup_usd_per_unit,20k-70k,assumption

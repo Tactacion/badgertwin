@@ -1,0 +1,8 @@
+// Hourly simulated readings (long format). Loaded from data/SensorReading.csv.
+// If your platform version prefers timeseries types, convert to TimeseriesHeader/IntervalDataPoint
+// (see the playbook, section 2.3); the BadgerTwin methods only need (timestamp, sensorId, value).
+entity type SensorReading schema name "BT_SENSOR_READING" {
+  timestamp: datetime
+  sensorId: string
+  value: double
+}

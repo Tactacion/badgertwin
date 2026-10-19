@@ -1,0 +1,206 @@
+[
+ {
+  "url": "https://news.wisc.edu/campus-cooling-issues/",
+  "title": "Campus cooling issues",
+  "publisher": "UW-Madison News (official FAQ)",
+  "date": "last updated 2026-08-09 (FAQ); page 2026-08-25 per fetch",
+  "whatItSupports": "June 17 break at one of three plants; updates June 26-Aug 10; all closed/partial buildings reopened Aug 10; mobile chillers into Sept. No building list on page.",
+  "retrieval": "curl HTML + WebFetch",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/news_wisc_faq.txt",
+  "verified": true,
+  "id": "Source-0001"
+ },
+ {
+  "url": "https://news.wisc.edu/update-important-details-regarding-campus-cooling-issues/",
+  "title": "Update: Important details regarding campus cooling issues",
+  "publisher": "UW-Madison News",
+  "date": "2026-06-28",
+  "whatItSupports": "Temperature adjustments June 28; locks/closures June 29; \"at least one month\" repair; buildings listed on page but list not in saved HTML text",
+  "retrieval": "curl HTML + WebFetch",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/news_wisc_update439.txt",
+  "verified": true,
+  "id": "Source-0002"
+ },
+ {
+  "url": "https://news.wisc.edu/campus-building-cooling-issues-update-and-response/",
+  "title": "Campus building cooling issues: Update and response",
+  "publisher": "UW-Madison News",
+  "date": "2026-06-26",
+  "whatItSupports": "June 17 break; reduced cooling next week; cooling repair several weeks",
+  "retrieval": "curl HTML + WebFetch",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/news_wisc_update437.txt",
+  "verified": true,
+  "id": "Source-0003"
+ },
+ {
+  "url": "https://www.channel3000.com/news/broken-chilled-water-line-disrupts-cooling-in-34-uw-madison-buildings/article_f4b44405-ccf7-4ace-910a-d938657f595f.html",
+  "title": "Broken chilled water line disrupts cooling in 34 UW-Madison buildings",
+  "publisher": "Channel 3000 (WISC-TV)",
+  "date": "approx. 2026-06-26 to 06-29 (not in saved HTML)",
+  "whatItSupports": "Full list of 23 closed + 11 partial buildings; ~30 temporary chillers; Cramer statement; \"34 buildings will be warmer than usual\"",
+  "retrieval": "curl HTML (full list present in text)",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/channel3000_34bldgs.txt",
+  "verified": true,
+  "id": "Source-0004"
+ },
+ {
+  "url": "https://www.wmtv15news.com/2026/07/01/board-regents-approved-millions-aging-infrastructure-weeks-before-uw-madison-ac-issues-records-show/",
+  "title": "Board of Regents approved millions for aging infrastructure weeks before UW-Madison AC issues, records show",
+  "publisher": "WMTV (NBC15)",
+  "date": "2026-06-30 pub; 2026-07-01 URL",
+  "whatItSupports": "Engineering Centers ~$3M chilled water repair approved June 4; Charmany chiller ~$3M; 23 fully closed incl. Bascom/Science/Grainger; 11 partial; Engineering Centers 2005-era flood reference",
+  "retrieval": "curl HTML + WebFetch",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/wmtv_regents.txt",
+  "verified": true,
+  "id": "Source-0005"
+ },
+ {
+  "url": "https://captimes.com/news/education/uw-madison-plans-to-fix-broken-ac-before-students-return-this-fall/article_1d010c5c-8d20-46f7-ad04-0af8da2f1ba5.html",
+  "title": "UW-Madison plans to fix broken AC before students return this fall",
+  "publisher": "Cap Times",
+  "date": "2026-07-16 event (article ~July 16-17)",
+  "whatItSupports": "Pipe removed; permanent replacement underway; 4-ft pipe 20 ft deep; Regents July 16 meeting; $2.5B deferred maintenance quote; closed buildings list linked on UW website",
+  "retrieval": "curl HTML",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/captimes_fix_before_fall.txt",
+  "verified": true,
+  "id": "Source-0006"
+ },
+ {
+  "url": "https://captimes.com/news/education/uw-madisons-summer-air-conditioning-woes-cost-15-8-million/article_ae088b27-5613-41ea-ae92-b02cb70ccd1e.html",
+  "title": "UW-Madison's summer air conditioning woes cost $15.8 million",
+  "publisher": "Cap Times",
+  "date": "2026-10-08",
+  "whatItSupports": "$15.8M total; $1.8M pipe; ~$10M temporary chillers; ~$4M deterioration; $40M Regents reallocation Oct 8; cause still under investigation",
+  "retrieval": "curl HTML + WebFetch",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/captimes_cost.txt",
+  "verified": true,
+  "id": "Source-0007"
+ },
+ {
+  "url": "https://badgerherald.com/news/campus/2026/06/30/uw-campus-cooling-issues-lead-to-closure-of-multiple-campus-buildings/",
+  "title": "UW campus cooling issues lead to closure of multiple campus buildings",
+  "publisher": "The Badger Herald",
+  "date": "2026-06-30",
+  "whatItSupports": "\"over 20 buildings\" early closure count",
+  "retrieval": "curl HTML + WebFetch",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/badgerherald.txt",
+  "verified": true,
+  "id": "Source-0008"
+ },
+ {
+  "url": "https://www.yahoo.com/news/us/articles/ac-returns-dozens-uw-madison-164515888.html",
+  "title": "AC returns to dozens of UW-Madison buildings weeks after pipe break",
+  "publisher": "Yahoo News (syndicated, likely Madison.com/ Gannett-style)",
+  "date": "2026-08-11",
+  "whatItSupports": "Reopened dozens of buildings Aug 10; 34 buildings affected incl. Bascom Hall; repairs nearly two months; pipe 4 ft / 20 ft",
+  "retrieval": "curl HTML + WebFetch",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/yahoo_reopen.txt",
+  "verified": true,
+  "id": "Source-0009"
+ },
+ {
+  "url": "https://news.wisc.edu/water-main-leak-damages-high-tech-engineering-centers-building",
+  "title": "Water main leak damages high-tech engineering centers building",
+  "publisher": "UW-Madison News",
+  "date": "2005-12 (inferred; page text has no date)",
+  "whatItSupports": "Dec 2005 Engineering Centers coil freeze, ~30,000 gallons, building at 1550 Engineering Dr",
+  "retrieval": "curl HTML",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/news_wisc_eng_centers.txt",
+  "verified": true,
+  "id": "Source-0010"
+ },
+ {
+  "url": "https://www.dailycardinal.com/article/2005/12/faulty-water-coil-floods-uw-building",
+  "title": "Faulty water coil floods UW building",
+  "publisher": "The Daily Cardinal",
+  "date": "2005-12-05",
+  "whatItSupports": "30,000-gallon spill Friday morning, Engineering Centers",
+  "retrieval": "curl HTML",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/dailycardinal_2005.txt",
+  "verified": true,
+  "id": "Source-0011"
+ },
+ {
+  "url": "https://sustainability.wisc.edu/charter-street-heating-cooling-plant/",
+  "title": "A Lake Runs Through It: How the Charter Street Heating & Cooling Plant Helps UW-Madison Stay Comfortable Year-Round",
+  "publisher": "UW-Madison Office of Sustainability",
+  "date": "undated (photo credits 2013; text mentions 2016-2017)",
+  "whatItSupports": "Charter plant boilers (1.2M lb/hr steam), 4 steam chillers at Charter, 2 at Walnut, YORK 8,000/8,500-ton chillers, 40-degree chilled water, lake water costs",
+  "retrieval": "curl HTML",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/charter_plant_sust.txt",
+  "verified": true,
+  "id": "Source-0012"
+ },
+ {
+  "url": "https://physicalplant.wisc.edu/service-areas/heating-cooling-plants/",
+  "title": "Heating & Cooling Plants",
+  "publisher": "UW-Madison FP&M",
+  "date": "undated (2026 copyright)",
+  "whatItSupports": "Charter and Walnut plants supply steam, chilled water, etc.; coordination with West Campus Cogen; FP&M office address",
+  "retrieval": "curl HTML",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/physplant_plants.txt",
+  "verified": true,
+  "id": "Source-0013"
+ },
+ {
+  "url": "https://facilities.fpm.wisc.edu/facility-list/",
+  "title": "Facility List",
+  "publisher": "UW-Madison FP&M",
+  "date": "accessed 2026-10-19",
+  "whatItSupports": "Facility number, name, street address (no GSF column; ~1,108 rows)",
+  "retrieval": "curl HTML (saved to raw/fpm_facility_list.html), parsed",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/fpm_facility_list.html",
+  "verified": true,
+  "id": "Source-0014"
+ },
+ {
+  "url": "https://en.wikipedia.org/wiki/West_Campus_Cogeneration_Facility",
+  "title": "West Campus Cogeneration Facility",
+  "publisher": "Wikipedia",
+  "date": "accessed 2026-10-19",
+  "whatItSupports": "Coordinates 43\u00b04\u203230\u2033N 89\u00b025\u203226\u2033W; MGE/UW co-owned; Lake Mendota cooling source",
+  "retrieval": "curl HTML",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/wiki_wcc.txt",
+  "verified": true,
+  "id": "Source-0015"
+ },
+ {
+  "url": "https://www.mge.com/about-mge/power-plants/west-campus-cogen/",
+  "title": "West Campus Cogen (MGE)",
+  "publisher": "Madison Gas & Electric",
+  "date": "accessed 2026-10-19",
+  "whatItSupports": "Nothing extracted (page text had no address/capacity)",
+  "retrieval": "curl HTML",
+  "rawFile": "/Users/revanshphull/c4ai/data/raw/articles/mge_wcc.txt",
+  "verified": false,
+  "id": "Source-0016"
+ },
+ {
+  "url": "https://search.library.wisc.edu/digital/APB2AOOBDBPO2U8S/text/AP5IMH6RJZHNGR8Y",
+  "title": "UW News Service June 1980 release on 48-inch chilled water main leak (login-restricted)",
+  "publisher": "UW-Madison Libraries digital archive",
+  "date": "1980-06",
+  "whatItSupports": "1980 leak facts (search snippet only; page not accessible)",
+  "retrieval": "search snippet only",
+  "verified": false,
+  "id": "Source-0017"
+ },
+ {
+  "url": "https://tollbit.madison.com/news/local/education/university/article_43664c74-8588-4544-b266-92f17c13282c.html",
+  "title": "Madison.com reopen article (redirect; not fetched)",
+  "publisher": "Wisconsin State Journal",
+  "whatItSupports": "Not used",
+  "retrieval": "redirect not followed",
+  "verified": false,
+  "id": "Source-0018"
+ },
+ {
+  "url": "https://tollbit.madison.com/news/local/education/university/article_f2672c1c-9350-4d54-9052-7467ce37df64.html",
+  "title": "Madison.com 34 buildings article (redirect; not fetched)",
+  "publisher": "Wisconsin State Journal",
+  "whatItSupports": "Not used",
+  "retrieval": "redirect not followed",
+  "verified": false,
+  "id": "Source-0019"
+ }
+]

@@ -1,0 +1,16 @@
+// Produced by planEmergency; approved by the FP&M director AND the VC for Finance.
+entity type EmergencyPlan schema name "BT_PLAN" {
+  incidentId: string
+  inputs: json
+  solver: string
+  plantCapacityTons: double
+  eastDemandTons: double
+  buildings: json         // per building: served %, open/closed, why
+  placements: json        // rented chillers per site
+  costUsdPerDay: double
+  dieselGalPerDay: double
+  co2TPerDay: double
+  summary: string
+  status: string          // draft | approved
+  approvals: json         // {role: {name, at}}
+}

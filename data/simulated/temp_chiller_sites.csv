@@ -1,0 +1,15 @@
+site_id,near_building_id,near_building,lat,lon,max_units,unit_tons_options,generator_kw_per_unit,setup_cost_usd,data_origin
+TC-01,B028,Medical Sciences Center,43.074396,-89.40679,3,300|400|500,750,48155,ASSUMED candidate site
+TC-02,B021,Stock Pavilion,43.075297,-89.414721,3,300|400|500,750,50129,ASSUMED candidate site
+TC-03,B011,Henry Taylor Hall,43.074644,-89.409026,2,300|400|500,750,60792,ASSUMED candidate site
+TC-04,B018,Science Hall,43.07627,-89.400798,3,300|400|500,750,59388,ASSUMED candidate site
+TC-05,B012,Hiram Smith Hall,43.076398,-89.411175,1,300|400|500,750,35481,ASSUMED candidate site
+TC-06,B032,Van Vleck Hall,43.075247,-89.404488,2,300|400|500,750,61402,ASSUMED candidate site
+TC-07,B027,McArdle Building,43.074874,-89.408463,2,300|400|500,750,65213,ASSUMED candidate site
+TC-08,B026,Bardeen Medical Laboratories,43.075233,-89.406578,2,300|400|500,750,64028,ASSUMED candidate site
+TC-09,B024,445 Henry Mall,43.074684,-89.409496,2,300|400|500,750,69367,ASSUMED candidate site
+TC-10,B023,William S. Middleton Building,43.07521,-89.407746,1,300|400|500,750,68277,ASSUMED candidate site
+TC-11,B019,Service Memorial Institute,43.074842,-89.406435,2,300|400|500,750,44103,ASSUMED candidate site
+TC-12,B034,W. J. Brogden Psychology Building,43.072936999999996,-89.405783,3,300|400|500,750,68422,ASSUMED candidate site
+TC-13,B007,Bradley Memorial Building,43.074965999999996,-89.407163,2,300|400|500,750,50513,ASSUMED candidate site
+TC-14,B004,Agricultural Engineering Hall,43.075191,-89.410297,2,300|400|500,750,44273,ASSUMED candidate site

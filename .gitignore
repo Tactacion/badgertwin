@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+state/
+*.tmp
+.DS_Store
+temp.bin
+temp.inp
+temp.rpt
+node_modules/
+ui/public/assets/maplibre-gl-*.mjs

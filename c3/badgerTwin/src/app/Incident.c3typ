@@ -1,0 +1,12 @@
+// Opened by the Monitoring agent when the leak detector alerts.
+entity type Incident schema name "BT_INCIDENT" {
+  replayTime: string
+  kind: string            // leak | burst | capacity
+  suspectedPipe: string   // PipeSegment id
+  top3: json
+  confidence: string
+  headline: string
+  evidence: json
+  diagnosis: string
+  status: string          // open | diagnosed | planned | closed
+}

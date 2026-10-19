@@ -1,0 +1,38 @@
+/**
+ * BadgerTwin app API. Each method wraps a function of the badgertwin core (src/py/badgertwin).
+ * Agents in the C3 Agent Gallery should call THESE methods as tools and must only state numbers
+ * the tools return. Anything that changes state requires a named approver (enforced in Python).
+ *
+ * NOTE: the runtime tag below follows the platform 8.9 docs pattern (`js-server`). If C3 Code
+ * reports a different Python runtime name for your version, change `py-server` everywhere here.
+ */
+type BadgerTwin {
+  /** Leak status at a replay hour: kind, headline, top-3 suspect pipes, evidence. */
+  detectLeak: function(asOf: string): json py-server
+
+  /** Run the detector hour by hour and score it against EventLabel. */
+  detectorTest: function(): json py-server
+
+  /** Make-up water (gal/day, 24-h rolling) between two times, for the Campus chart. */
+  makeupSeries: function(start: string, end: string): json py-server
+
+  /** Health risk (Normal / Watch / Act) for every pipe, chiller and pump. */
+  healthScores: function(asOf: string): json py-server
+
+  /** Emergency cooling plan. spec: {start, forecastMaxF, extraOutageTons, budgetUsdPerDay, solver}. */
+  planEmergency: function(spec: json): json py-server
+
+  /** Ranked pipe replacements within a budget + a drafted Regents request. */
+  rankRepairs: function(budgetUsd: double): json py-server
+
+  /** Read-only Q&A with citations. */
+  ask: function(question: string, asOf: string): json py-server
+
+  // ---- state-changing actions (each writes AuditLog) ----
+  openIncident: function(asOf: string): json py-server
+  approveWorkOrder: function(workOrderId: string, approver: string, edits: json): json py-server
+  savePlan: function(incidentId: string, spec: json): json py-server
+  approvePlan: function(planId: string, approvers: json): json py-server
+  approveAlert: function(alertId: string, approver: string, body: string): json py-server
+  resetDemo: function(): json py-server
+}

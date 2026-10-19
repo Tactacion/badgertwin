@@ -1,0 +1,69 @@
+[
+ {
+  "building": "McArdle Building",
+  "nihDeptType": "ONCOLOGY",
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0001"
+ },
+ {
+  "building": "Medical Sciences Center",
+  "nihDeptType": "PHYSIOLOGY",
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0002"
+ },
+ {
+  "building": "Bardeen Medical Laboratories",
+  "nihDeptType": "ANATOMY/CELL BIOLOGY",
+  "nihAwardUsdFy2526": 26197120.0,
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0003"
+ },
+ {
+  "building": "Service Memorial Institute",
+  "nihDeptType": "PHYSIOLOGY",
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0004"
+ },
+ {
+  "building": "W. J. Brogden Psychology Building",
+  "nihDeptType": "PSYCHOLOGY",
+  "nihAwardUsdFy2526": 22662803.0,
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0005"
+ },
+ {
+  "building": "Wisconsin Institutes for Medical Research",
+  "nihDeptType": "INTERNAL MEDICINE/MEDICINE",
+  "nihAwardUsdFy2526": 240436677.0,
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0006"
+ },
+ {
+  "building": "Microbial Sciences Building",
+  "nihDeptType": "MICROBIOLOGY/IMMUN/VIROLOGY",
+  "nihAwardUsdFy2526": 22748921.0,
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0007"
+ },
+ {
+  "building": "Rennebohm Hall",
+  "nihDeptType": "PHARMACOLOGY",
+  "nihAwardUsdFy2526": 6980430.0,
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0008"
+ },
+ {
+  "building": "Henry Taylor Hall",
+  "nihDeptType": "VETERINARY SCIENCES",
+  "nihAwardUsdFy2526": 152081.0,
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0009"
+ },
+ {
+  "building": "Health Sciences Learning Center",
+  "nihDeptType": "PUBLIC HEALTH & PREV MEDICINE",
+  "nihAwardUsdFy2526": 16532417.0,
+  "mappingOrigin": "ASSUMED building\u2194department mapping; $ are real NIH RePORTER totals",
+  "id": "BuildingResearchMap-0010"
+ }
+]

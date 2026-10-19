@@ -1,0 +1,137 @@
+TITLE: A Lake Runs Through It: How the Charter Street Heating & Cooling Plant Helps UW-Madison Stay Comfortable Year-Round – Office of Sustainability – UW–Madison
+URL: https://sustainability.wisc.edu/charter-street-heating-cooling-plant/
+FETCHED: 2026-10-19
+NOTE: plain-text extraction of saved HTML (curl); boilerplate lines under 25 chars removed; not verbatim-complete.
+
+Skip to main content
+University of Wisconsin–Madison
+Newsletter
+Jobs / Internships
+Support
+Contact Us
+Office of Sustainability University of Wisconsin–Madison
+Search for:
+Menu
+Search for:
+Home
+Sustainability Dashboard
+Sustainability Goals
+Goals Overview
+Achieve Net-Zero Emissions
+Zero Waste by 2040
+Support Cross-Campus Involvement
+Catalyze Innovative Research
+Foster Educational Experiences
+Academics & Research
+Academics
+Campus Sustainability Experts
+Faculty Fellows
+Research
+Sustainability Course Attribute
+Sustainability Research Hub
+Students in Sustainability
+Earth Fest
+Green Fund
+Student Intern Program
+Student Organizations
+Sustain-A-Bash
+Sustainability Writing Awards
+The SustainUW Podcast
+Get Certified
+Green Events
+Green Labs
+Green Offices
+News & Events
+Resources
+Badger’s Guide to Sustainability
+Campus Sustainability Map
+Collaborate with Us
+Composting Guidelines
+Project Archive
+Recycling Guidelines
+Reporting and Governance
+Sustainability @ UW–Madison
+Sustainable Moving
+Transportation Resources
+University Housing Sustainability
+About
+History
+Mission & Vision
+Defining Sustainability
+Certifications and Awards
+Directory
+Jobs / Internships
+Support
+Contact Us
+Newsletter
+Jobs / Internships
+Support
+Contact Us
+Home
+People
+Staff
+A Lake Runs Through It: How the Charter Street Heating & Cooling Plant Helps UW-Madison Stay Comfortable Year-Round
+A Lake Runs Through It: How the Charter Street Heating & Cooling Plant Helps UW–Madison Stay Comfortable Year-Round
+February 13, 2019
+Charter Street Heating & Cooling Plant. Photo by Nathan Jandl.
+At UW–Madison, heating and cooling is all about water.
+Libraries, offices, dorms, dining halls, hospitals, and other campus locations must be kept warm in the winter and cool in the summer. Meanwhile, sensitive spaces like operating rooms and research labs require precise, steady temperatures. None of this would be possible without a constant flow of chilled water and high-pressure steam.
+Travis Thoeny, Plant Manager for the Charter and Walnut Street plants. Photo by Nathan Jandl.
+These utilities, along with compressed air, are generated at three facilities on campus: Charter Street Heating & Cooling Plant , Walnut Street Heating & Cooling Plant, and the West Campus Cogeneration Facility (which is operated by Madison Gas and Electric).
+A dedicated team of Facilities Planning & Management (FP&M) employees ensure that the delivery of heating and cooling to campus is reliable and resilient. “We are the heart of the campus for its utilities,” says Travis Thoeny, Plant Manager for the Charter and Walnut Street plants. Just as one’s heart must keep beating to keep the body alive, so too must the three plants operate consistently, with an absolute minimum of downtime, in order to keep UW–Madison running.
+From hot to cold
+Making steam and chilled water for a large campus requires serious equipment and substantial output. The five natural gas-fired boilers at Charter Street—which replaced far less efficient coal-fired units —can produce a maximum of 1,200,000 lbs/hour of steam. As a backup system for the boilers, the plant also keeps 840,000 gallons of fuel oil in a single tank.
+UW–Madison uses the steam for several purposes: heating campus buildings and two hospitals; running a steam turbine generator to produce electricity; and powering four steam turbine chillers at Charter Street as well as two more at Walnut Street. The steam also powers eight auxiliary steam turbine drives to support steam production at both plants.
+A massive chiller unit at Charter Street Heating & Cooling Plant. Photo by Nathan Jandl.
+The Charter Street chillers are the largest of their kind in the world—8,000-ton and 8,500-ton behemoths manufactured by YORK. They provide the 40-degree chilled water that circulates through the coils of air handling units on campus. As it circulates, the chilled water draws heat from the ambient air, making buildings more comfortable before it returns to the plant at approximately 50-55 degrees.
+This relatively warmer water then passes through a chiller evaporator, which incorporates between 3,100 and 5,200 tubes (depending on the unit) to transfer heat to a refrigerant . In other words, the water gives up the heat it picked up in the buildings to the refrigerant.
+The refrigerant, now carrying that heat, then travels to a compressor, in which it is converted to a hot, high-pressure gas. The gas enters a refrigerant condenser, which uses thousands more tubes to transfer heat from the refrigerant to the cooling tower water.
+Cooling tower water-circulation pumps at the Charter Street Heating Plant at the University of Wisconsin–Madison on Dec. 18, 2013. Photo by Bryce Richter / UW–Madison.
+Having become a liquid again, the refrigerant finally returns to the beginning of the cycle so it can chill new water. Meanwhile, the heat captured by the cooling tower water process is released to the atmosphere as vapor—commonly misinterpreted as “smoke” billowing from the Charter Street Plant.
+A more sustainable lake-to-lake system
+But where does all this water come from, and how does UW–Madison use its water resources sustainably?
+In recent years, UW–Madison has pumped untreated lake water from Lake Mendota to supply certain systems in its heating and cooling plants. Lake water brings many benefits. Compared to city water, lake water costs far less: approximately $0.30-$0.50 per 1000 gallons compared to $5.00 per 1000 gallons for city water.
+Zebra mussels clogging the inside of a pipe. Photo by Flickr user Patricia Steeves, CC BY-NC 2.0.
+In addition, using lake water means that Charter and Walnut Street Heating & Cooling plants, along with West Campus Cogeneration Facility, do not rely on groundwater for their operations. Rather, they draw a relatively small amount from Lake Mendota—500-600 million gallons per year, which is the equivalent to about two weeks of evaporation during hot summer weather.
+Lake water presents challenges, however, because it carries biological organisms that can accumulate inside pipes and other pieces of machinery.
+For this reason, in 2013 the university began treating lake water with a sand ballast clarifier system, which used bleach, coagulants , sand, and flocculants to remove impurities.
+The downside of the sand ballast clarifier? A lot of waste water was going down the sanitary sewer drain, in order for the bleach to be removed from the water before redistribution into the natural environment.
+The downtown Madison Isthmus and the Wisconsin State Capitol, along with Monona Bay and John Nolen Drive, are pictured in an early morning aerial taken from a helicopter on Oct. 23, 2018. Photo by Bryce Richter /UW–Madison.
+So the Charter Street Heating & Cooling Plant team decided to try an experiment: they stopped injecting the bleach into the lake water that supplied the closed-loop cooling (CLC) systems and cooling tower. As part of this process, the Charter Street team and UW–Madison’s water treatment vendor, U.S. Water , worked diligently to maximize the Charter and Walnut Street Plants’ performance while minimizing cost and maintenance. After careful testing, they found that residual chlorine was gone from their systems and that no problematic organic buildup was occurring in their machinery.
+By making this relatively simple change, the Charter Street plant diverted over 70 million gallons of water from the sanitary sewer drain to the storm sewer between 2016-2017.
+Award plaque presented by U.S. Water. Photo by Nathan Jandl.
+This water now flows, effectively, from one lake to another: it begins in Lake Mendota, and is discharged into Lake Monona under Department of Natural Resources (DNR) guidelines. Moreover, avoiding the sanitary sewer drain and thus the wastewater treatment plant reduces both energy usage and emissions.
+U.S. Water was so impressed that they gave UW–Madison an award for sustainability, recognizing the reduction in sanitary sewer volume from the plant and an annual savings of $191,970.
+“It’s awesome,” said Jeff Pollei, Director of Utilities and Energy Management. “It’s a simple change to save that amount of money.”
+Flowing into the future
+Travis Thoeny and his team plan to implement more sustainability measures in the near future, with two projects already underway. The first is an automatic cleaning system for those massive chillers. The trial chiller contains 3100 tubes in the evaporator and condenser units, which gradually experience build-up on their inner walls and a corresponding reduction in efficiency and performance. By installing new equipment that circulates hundreds of small, foam balls through these tubes, the entire system is cleaned at least once per day.
+One of the thousands of foam balls used to clean chiller tubes. Photo by Nathan Jandl.
+Once more, a sustainable choice is leading to both economic and environmental benefits. In a six-month test of the new cleaning method over the summer, the trial chiller at Charter Street saw a $40,000 savings in natural gas. It also gained an equivalent of 400-500 tons of additional cooling capacity compared with the previous year. Once the foam balls are added to the additional three chillers, Thoeny expects that the plant will save $220,000 in natural gas per year—which also translates to fewer greenhouse gas emissions.
+Finally, the plant has transitioned to a zero-phosphate chemical in their cooling towers. Thanks to this change, they hope to obtain a wastewater discharge permit from the DNR to switch their cooling tower blowdown water from the sanitary sewer to the storm sewer. This would result in the diversion of an additional 25-30 million gallons/year to the storm sewer, for an additional savings of $68,000-$82,000 per year.
+By: Nathan Jandl
+Posted in Energy , News , People , Staff Tagged Awards , Charter Street Heating & Cooling Plant , Climate , Energy , Facilities Planning & Management , HVAC , Lake Mendota , Lake Monona , Travis Thoeny , Walnut Street Heating & Cooling Plant , Water , West Campus Cogeneration Facility
+Post navigation
+Previous post: Intern Column: Showing Love for Both Planet and People on Valentine’s Day
+Next post: “Green” Celebration with Facilities Planning & Management Showcases New Intern Program
+Site footer content
+Part of the Universities of Wisconsin
+Quick Links
+Collaborate with Us
+Green Fund Program
+Lakeshore Nature Preserve
+News and Events
+Recycling
+Student Intern Program
+Support Our Work
+Sustainability Community of Practice
+Sustainability Dashboard
+Transportation
+Contact Us
+21 North Park Street, Suite 6401
+University of Wisconsin–Madison
+Madison, Wisconsin 53715
+Map
+Email us
+Phone: 608-265-3581
+Website feedback, questions or accessibility issues: njandl@wisc.edu | Learn more about accessibility at UW–Madison .
+This site was built using UW Theme 2.0 | Privacy Notice | © 2026 Board of Regents of the University of Wisconsin System .

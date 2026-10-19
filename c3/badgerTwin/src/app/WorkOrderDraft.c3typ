@@ -1,0 +1,16 @@
+// Drafted by the Work order agent; approved by a named shift supervisor.
+entity type WorkOrderDraft schema name "BT_WO_DRAFT" {
+  incidentId: string
+  assetId: string
+  type: string
+  priority: string
+  crew: string
+  parts: string
+  valvesToClose: json
+  steps: json
+  safety: string
+  note: string
+  status: string          // draft | approved
+  approvedBy: string
+  approvedAt: datetime
+}

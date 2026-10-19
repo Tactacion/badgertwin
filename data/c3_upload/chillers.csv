@@ -1,0 +1,13 @@
+chiller_id,plant_id,capacity_tons,type,install_year,design_kw_per_ton,current_kw_per_ton,data_origin
+P1-CH1,P1,8000,steam turbine centrifugal,2015,0.55,0.633,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P1-CH2,P1,8500,steam turbine centrifugal,2015,0.55,0.587,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P1-CH3,P1,4000,electric centrifugal,1998,0.55,0.728,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P1-CH4,P1,4000,electric centrifugal,1991,0.55,0.789,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P2-CH1,P2,3000,steam turbine centrifugal,1997,0.55,0.655,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P2-CH2,P2,3000,steam turbine centrifugal,1997,0.55,0.753,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P3-CH1,P3,5000,electric centrifugal,2005,0.55,0.707,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P3-CH2,P3,5000,electric centrifugal,2005,0.55,0.63,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P3-CH3,P3,5000,electric centrifugal,2005,0.55,0.663,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P3-CH4,P3,5000,electric centrifugal,2005,0.55,0.731,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P3-CH5,P3,5000,electric centrifugal,2012,0.55,0.602,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"
+P3-CH6,P3,5000,electric centrifugal,2012,0.55,0.611,"ASSUMED (Charter 8,000/8,500-ton units are public; rest assumed)"

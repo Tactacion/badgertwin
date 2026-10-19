@@ -1,0 +1,192 @@
+[
+ {
+  "nihDeptType": "INTERNAL MEDICINE/MEDICINE",
+  "nihAwardUsdFy2526": 240436677,
+  "id": "ResearchDollars-0001"
+ },
+ {
+  "nihDeptType": "PEDIATRICS",
+  "nihAwardUsdFy2526": 65786108,
+  "id": "ResearchDollars-0002"
+ },
+ {
+  "nihDeptType": "PATHOLOGY",
+  "nihAwardUsdFy2526": 57641218,
+  "id": "ResearchDollars-0003"
+ },
+ {
+  "nihDeptType": "RADIATION-DIAGNOSTIC/ONCOLOGY",
+  "nihAwardUsdFy2526": 49801626,
+  "id": "ResearchDollars-0004"
+ },
+ {
+  "nihDeptType": "BIOCHEMISTRY",
+  "nihAwardUsdFy2526": 44464927,
+  "id": "ResearchDollars-0005"
+ },
+ {
+  "nihDeptType": "SURGERY",
+  "nihAwardUsdFy2526": 26806094,
+  "id": "ResearchDollars-0006"
+ },
+ {
+  "nihDeptType": "ANATOMY/CELL BIOLOGY",
+  "nihAwardUsdFy2526": 26197120,
+  "id": "ResearchDollars-0007"
+ },
+ {
+  "nihDeptType": "OTHER HEALTH PROFESSIONS",
+  "nihAwardUsdFy2526": 25651607,
+  "id": "ResearchDollars-0008"
+ },
+ {
+  "nihDeptType": "OPHTHALMOLOGY",
+  "nihAwardUsdFy2526": 23154458,
+  "id": "ResearchDollars-0009"
+ },
+ {
+  "nihDeptType": "MICROBIOLOGY/IMMUN/VIROLOGY",
+  "nihAwardUsdFy2526": 22748921,
+  "id": "ResearchDollars-0010"
+ },
+ {
+  "nihDeptType": "PSYCHOLOGY",
+  "nihAwardUsdFy2526": 22662803,
+  "id": "ResearchDollars-0011"
+ },
+ {
+  "nihDeptType": "NEUROSCIENCES",
+  "nihAwardUsdFy2526": 20722403,
+  "id": "ResearchDollars-0012"
+ },
+ {
+  "nihDeptType": "CHEMISTRY",
+  "nihAwardUsdFy2526": 20213004,
+  "id": "ResearchDollars-0013"
+ },
+ {
+  "nihDeptType": "PSYCHIATRY",
+  "nihAwardUsdFy2526": 17475792,
+  "id": "ResearchDollars-0014"
+ },
+ {
+  "nihDeptType": "BIOSTATISTICS & OTHER MATH SCI",
+  "nihAwardUsdFy2526": 17194197,
+  "id": "ResearchDollars-0015"
+ },
+ {
+  "nihDeptType": "PUBLIC HEALTH & PREV MEDICINE",
+  "nihAwardUsdFy2526": 16532417,
+  "id": "ResearchDollars-0016"
+ },
+ {
+  "nihDeptType": "PHYSICS",
+  "nihAwardUsdFy2526": 16291055,
+  "id": "ResearchDollars-0017"
+ },
+ {
+  "nihDeptType": "GENETICS",
+  "nihAwardUsdFy2526": 16285974,
+  "id": "ResearchDollars-0018"
+ },
+ {
+  "nihDeptType": "BIOLOGY",
+  "nihAwardUsdFy2526": 15171511,
+  "id": "ResearchDollars-0019"
+ },
+ {
+  "nihDeptType": "NEUROLOGY",
+  "nihAwardUsdFy2526": 13539083,
+  "id": "ResearchDollars-0020"
+ },
+ {
+  "nihDeptType": "ENGINEERING (ALL TYPES)",
+  "nihAwardUsdFy2526": 11053562,
+  "id": "ResearchDollars-0021"
+ },
+ {
+  "nihDeptType": "SOCIAL SCIENCES",
+  "nihAwardUsdFy2526": 8819101,
+  "id": "ResearchDollars-0022"
+ },
+ {
+  "nihDeptType": "NONE",
+  "nihAwardUsdFy2526": 8159624,
+  "id": "ResearchDollars-0023"
+ },
+ {
+  "nihDeptType": "NUTRITION",
+  "nihAwardUsdFy2526": 7331415,
+  "id": "ResearchDollars-0024"
+ },
+ {
+  "nihDeptType": "MISCELLANEOUS",
+  "nihAwardUsdFy2526": 7034133,
+  "id": "ResearchDollars-0025"
+ },
+ {
+  "nihDeptType": "UROLOGY",
+  "nihAwardUsdFy2526": 7011165,
+  "id": "ResearchDollars-0026"
+ },
+ {
+  "nihDeptType": "PHARMACOLOGY",
+  "nihAwardUsdFy2526": 6980430,
+  "id": "ResearchDollars-0027"
+ },
+ {
+  "nihDeptType": "NEUROSURGERY",
+  "nihAwardUsdFy2526": 6481220,
+  "id": "ResearchDollars-0028"
+ },
+ {
+  "nihDeptType": "ZOOLOGY",
+  "nihAwardUsdFy2526": 6397554,
+  "id": "ResearchDollars-0029"
+ },
+ {
+  "nihDeptType": "BIOMEDICAL ENGINEERING",
+  "nihAwardUsdFy2526": 5370629,
+  "id": "ResearchDollars-0030"
+ },
+ {
+  "nihDeptType": "ANESTHESIOLOGY",
+  "nihAwardUsdFy2526": 5088208,
+  "id": "ResearchDollars-0031"
+ },
+ {
+  "nihDeptType": "DERMATOLOGY",
+  "nihAwardUsdFy2526": 4430197,
+  "id": "ResearchDollars-0032"
+ },
+ {
+  "nihDeptType": "FAMILY MEDICINE",
+  "nihAwardUsdFy2526": 2774909,
+  "id": "ResearchDollars-0033"
+ },
+ {
+  "nihDeptType": "EMERGENCY MEDICINE",
+  "nihAwardUsdFy2526": 2416031,
+  "id": "ResearchDollars-0034"
+ },
+ {
+  "nihDeptType": "OBSTETRICS & GYNECOLOGY",
+  "nihAwardUsdFy2526": 1686807,
+  "id": "ResearchDollars-0035"
+ },
+ {
+  "nihDeptType": "OTHER BASIC SCIENCES",
+  "nihAwardUsdFy2526": 1329918,
+  "id": "ResearchDollars-0036"
+ },
+ {
+  "nihDeptType": "PHYSICAL MEDICINE & REHAB",
+  "nihAwardUsdFy2526": 213460,
+  "id": "ResearchDollars-0037"
+ },
+ {
+  "nihDeptType": "VETERINARY SCIENCES",
+  "nihAwardUsdFy2526": 152081,
+  "id": "ResearchDollars-0038"
+ }
+]

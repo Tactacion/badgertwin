@@ -1,0 +1,7 @@
+[out:json][timeout:180];
+(
+  way["building"]["name"](43.0640,-89.4420,43.0820,-89.3900);
+  relation["building"]["name"](43.0640,-89.4420,43.0820,-89.3900);
+  way["power"="plant"](43.0600,-89.4450,43.0850,-89.3850);
+);
+out geom tags;

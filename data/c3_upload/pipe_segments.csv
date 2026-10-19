@@ -1,0 +1,70 @@
+pipe_id,from_node,to_node,length_ft,diameter_in,role,install_year,material,depth_ft,soil,in_tunnel,route_confidence,data_origin
+CW-X01,J06,J12,237,8,crossover,1975,concrete-coated steel,12.1,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-X02,J05,J11,262,8,crossover,2016,HDPE,11.9,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-M01,P1,J02,556,48,trunk,1966,concrete-coated steel,20.0,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-T04,J08,J12,1015,30,trunk,1975,concrete-coated steel,11.4,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-T05,J03,J04,1021,30,trunk,1984,concrete-coated steel,7.2,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-T06,J01,J04,1337,30,trunk,1968,concrete-coated steel,10.3,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-T07,J06,J07,1366,30,trunk,2009,ductile iron,10.2,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-T08,J05,J07,1376,30,trunk,1975,concrete-coated steel,11.7,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-T09,J01,J02,1381,30,trunk,1968,concrete-coated steel,14.8,sandy fill,True,approximate,SIMULATED topology from public plant/building locations
+CW-T10,J02,J05,1426,30,trunk,1992,HDPE,9.8,sandy fill,True,approximate,SIMULATED topology from public plant/building locations
+CW-T11,J05,J06,1651,30,trunk,1984,concrete-coated steel,9.9,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-T12,J11,J12,1775,30,trunk,1992,ductile iron,15.4,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-T13,J03,J07,1786,30,trunk,1975,concrete-coated steel,13.0,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-T14,J08,J11,1891,30,trunk,1968,concrete-coated steel,10.3,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-T15,P3,J10,2322,36,trunk,1962,concrete-coated steel,14.5,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-T16,P2,J10,2385,36,trunk,1984,concrete-coated steel,15.8,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-T17,J09,J11,2601,30,trunk,1984,concrete-coated steel,10.6,sandy fill,True,approximate,SIMULATED topology from public plant/building locations
+CW-T18,J09,J12,3827,30,trunk,1962,concrete-coated steel,9.8,glacial till,True,approximate,SIMULATED topology from public plant/building locations
+CW-T19,J08,J10,5757,30,trunk,2001,HDPE,12.6,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L001,J01,B001,1140,6,lateral,2001,HDPE,7.4,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L002,J02,B002,138,6,lateral,2001,HDPE,10.8,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L003,J06,B003,434,6,lateral,2009,ductile iron,12.4,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L004,J06,B004,100,6,lateral,2001,steel,7.9,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L005,J03,B005,864,6,lateral,2016,steel,11.9,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L006,J07,B006,737,6,lateral,1984,concrete-coated steel,12.1,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L007,J07,B007,433,6,lateral,1962,concrete-coated steel,8.4,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L008,J01,B008,598,8,lateral,2001,HDPE,7.0,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L009,J02,B009,138,6,lateral,1975,concrete-coated steel,12.1,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L010,J01,B010,771,14,lateral,1984,concrete-coated steel,13.6,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L011,J06,B011,567,6,lateral,1992,ductile iron,12.7,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L012,J06,B012,560,6,lateral,2016,ductile iron,15.3,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L013,J07,B013,434,8,lateral,1975,concrete-coated steel,6.5,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L014,J05,B014,493,6,lateral,2016,HDPE,12.8,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L015,J03,B015,527,6,lateral,2016,steel,6.7,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L016,J03,B016,678,6,lateral,2001,HDPE,11.1,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L017,J03,B017,300,6,lateral,2016,ductile iron,9.1,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L018,J03,B018,131,8,lateral,1962,concrete-coated steel,7.7,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L019,J07,B019,335,10,lateral,1962,concrete-coated steel,8.4,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L020,J03,B020,832,6,lateral,1968,concrete-coated steel,12.9,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L021,J06,B021,1402,6,lateral,1968,concrete-coated steel,9.9,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L022,J07,B022,782,12,lateral,1962,concrete-coated steel,14.4,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L023,J07,B023,559,6,lateral,1984,concrete-coated steel,8.5,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L024,J06,B024,437,6,lateral,2001,ductile iron,12.0,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L025,J03,B025,1117,6,lateral,1962,concrete-coated steel,8.9,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L026,J07,B026,213,6,lateral,2001,HDPE,15.8,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L027,J06,B027,688,6,lateral,2001,steel,8.0,silty clay,True,approximate,SIMULATED topology from public plant/building locations
+CW-L028,J07,B028,558,6,lateral,2001,ductile iron,8.4,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L029,J07,B029,752,8,lateral,1962,concrete-coated steel,11.7,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L030,J04,B030,438,6,lateral,2001,HDPE,8.3,silty clay,True,approximate,SIMULATED topology from public plant/building locations
+CW-L031,J07,B031,221,14,lateral,1962,concrete-coated steel,7.9,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L032,J07,B032,571,6,lateral,1992,ductile iron,15.1,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L033,J04,B033,438,14,lateral,1992,steel,15.5,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L034,J05,B034,493,8,lateral,2001,steel,12.1,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L035,J09,B035,1015,6,lateral,1992,steel,8.8,sandy fill,True,approximate,SIMULATED topology from public plant/building locations
+CW-L036,J11,B036,476,10,lateral,1968,concrete-coated steel,15.5,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L037,J11,B037,706,14,lateral,1984,concrete-coated steel,8.3,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L038,J11,B038,425,12,lateral,2009,HDPE,11.5,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L039,J11,B039,290,12,lateral,2016,steel,8.7,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L040,J08,B040,178,10,lateral,1962,concrete-coated steel,9.8,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L041,J08,B041,178,10,lateral,1962,concrete-coated steel,11.5,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L042,J12,B042,474,14,lateral,1992,steel,10.2,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L043,J10,B043,234,12,lateral,1992,ductile iron,10.9,silty clay,True,approximate,SIMULATED topology from public plant/building locations
+CW-L044,J09,B044,567,14,lateral,1992,ductile iron,6.4,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L045,J09,B045,1200,12,lateral,2016,HDPE,16.0,sandy fill,False,approximate,SIMULATED topology from public plant/building locations
+CW-L046,J10,B046,549,16,lateral,1984,concrete-coated steel,15.9,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L047,J11,B047,501,12,lateral,1984,concrete-coated steel,7.9,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L048,J09,B048,2403,14,lateral,1962,concrete-coated steel,11.7,silty clay,False,approximate,SIMULATED topology from public plant/building locations
+CW-L049,J10,B049,668,12,lateral,1962,concrete-coated steel,15.9,glacial till,False,approximate,SIMULATED topology from public plant/building locations
+CW-L050,J12,B050,474,8,lateral,1968,concrete-coated steel,14.6,glacial till,False,approximate,SIMULATED topology from public plant/building locations

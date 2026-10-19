@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BadgerTwin</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">BadgerTwin <span class="sub">campus chilled-water twin</span></div>
+    <nav id="nav">
+      <button data-screen="campus" class="tab active">1 · Campus</button>
+      <button data-screen="incident" class="tab">2 · Incident</button>
+      <button data-screen="plan" class="tab">3 · Emergency plan</button>
+      <button data-screen="repairs" class="tab minor">Repairs</button>
+      <button data-screen="sources" class="tab minor">Sources &amp; audit</button>
+    </nav>
+  </header>
+
+  <section class="replay">
+    <div class="replay-time"><span class="muted">Replay time</span> <strong id="replay-label">—</strong>
+      <span id="outdoor" class="muted"></span></div>
+    <input id="slider" type="range" min="0" max="1" value="0" aria-label="Replay time">
+    <div class="replay-controls">
+      <button id="play" class="ghost">▶ Play</button>
+      <select id="speed" aria-label="Replay speed"><option value="1">1×</option><option value="10" selected>10×</option><option value="100">100×</option></select>
+      <span class="jumps">Jump to:
+        <button class="link" data-jump="2026-06-05 12:00">Jun 5 (normal)</button>
+        <button class="link" data-jump="2026-06-09 08:00">Jun 9 (early leak)</button>
+        <button class="link" data-jump="2026-06-17 15:00">Jun 17 (break)</button>
+        <button class="link" data-jump="2026-06-19 15:00">Jun 19 (after shut-off)</button>
+      </span>
+    </div>
+  </section>
+
+  <main>
+    <!-- ============ 1. CAMPUS ============ -->
+    <section id="screen-campus" class="screen active">
+      <div class="grid">
+        <div class="card map-card">
+          <div class="card-head"><h2>Campus network</h2><div class="legend">
+            <span><i class="sw normal"></i>Normal</span><span><i class="sw watch"></i>Watch</span><span><i class="sw act"></i>Act</span>
+            <span class="muted">■ plant · ● building · line width = pipe size</span></div></div>
+          <svg id="map" viewBox="0 0 1000 560" role="img" aria-label="Map of plants, pipes and buildings"></svg>
+          <div id="tooltip" class="tooltip" hidden></div>
+          <p class="note">Pipe routes are approximate. This is not UW's real network.</p>
+        </div>
+        <div class="side">
+          <div class="card status" id="status-card">
+            <div class="status-kind" id="status-kind">—</div>
+            <p id="status-headline" class="headline">Loading…</p>
+            <ul id="status-evidence" class="evidence"></ul>
+            <button id="open-incident" class="primary" disabled>Open incident</button>
+            <p id="open-hint" class="muted small"></p>
+          </div>
+          <div class="card">
+            <h3>Water added to the loop <span class="muted">(gallons per day, last 14 days)</span></h3>
+            <svg id="makeup-chart" viewBox="0 0 420 180" role="img" aria-label="Make-up water chart"></svg>
+            <p class="muted small">Grey band = normal range. Dashed line = alert level. Source: Charter plant make-up meter (simulated).</p>
+          </div>
+          <div class="card">
+            <h3>Ask about any pipe, building or past failure</h3>
+            <form id="ask-form" class="ask"><input id="ask-input" placeholder="How old is CW-M01 and what has failed near it?" aria-label="Question"><button class="ghost">Ask</button></form>
+            <div id="ask-answer" class="answer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. INCIDENT ============ -->
+    <section id="screen-incident" class="screen">
+      <div id="incident-empty" class="card empty">No open incident. When the Campus screen shows an alert, press <b>Open incident</b>.</div>
+      <div id="incident-body" class="grid" hidden>
+        <div class="card">
+          <div class="card-head"><h2 id="inc-title">Incident</h2><span id="inc-status" class="pill"></span></div>
+          <p id="inc-headline" class="headline"></p>
+          <h3>Most likely pipes</h3>
+          <table class="table" id="inc-suspects"><thead><tr><th>Pipe</th><th>Between</th><th>Why</th></tr></thead><tbody></tbody></table>
+          <h3>Diagnosis <span class="muted">(suggestion, not certain)</span></h3>
+          <pre id="inc-diagnosis" class="prose"></pre>
+          <details><summary>Evidence</summary><ul id="inc-evidence" class="evidence"></ul></details>
+        </div>
+        <div class="card">
+          <div class="card-head"><h2>Drafted work order</h2><span id="wo-status" class="pill"></span></div>
+          <label>Type <input id="wo-type"></label>
+          <label>Priority <input id="wo-priority"></label>
+          <label>Crew <input id="wo-crew"></label>
+          <label>Parts <input id="wo-parts"></label>
+          <label>Valves to close <input id="wo-valves"></label>
+          <label>Steps <textarea id="wo-steps" rows="5"></textarea></label>
+          <label>Safety <textarea id="wo-safety" rows="2"></textarea></label>
+          <p id="wo-note" class="muted small"></p>
+          <label>Approved by (shift supervisor) <input id="wo-approver" placeholder="Full name"></label>
+          <button id="approve-wo" class="primary">Approve work order</button>
+          <p id="wo-msg" class="small"></p>
+          <button id="to-plan" class="link">The pipe has broken? Go to the emergency plan →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. EMERGENCY PLAN ============ -->
+    <section id="screen-plan" class="screen">
+      <div class="grid">
+        <div class="card controls">
+          <h2>What if…</h2>
+          <label>Plan starts <select id="p-start">
+            <option value="2026-06-17 20:00">Jun 17, 8 pm (just after shut-off)</option>
+            <option value="2026-07-13 00:00">Jul 13 (hottest week of 2026)</option>
+            <option value="2026-08-01 00:00">Aug 1</option></select></label>
+          <label class="row"><input type="checkbox" id="p-use-forecast"> Use the real weather forecast</label>
+          <label>Hottest temperature in the next 3 days: <b id="p-temp-label">95 °F</b>
+            <input type="range" id="p-temp" min="70" max="100" value="95"></label>
+          <label>Extra plant chiller out of service: <b id="p-outage-label">0 tons</b>
+            <input type="range" id="p-outage" min="0" max="3000" step="250" value="0"></label>
+          <label>Rental budget per day (optional) <input id="p-budget" type="number" min="0" step="5000" placeholder="no limit"></label>
+          <label>Solver <select id="p-solver"><option value="auto">Best plan (optimizer)</option><option value="greedy">Simple rule (for comparison)</option></select></label>
+          <p class="muted small" id="p-solve-info"></p>
+        </div>
+        <div class="card">
+          <div class="kpis">
+            <div class="kpi"><span class="k" id="k-cost">—</span><span class="l">rental cost per day</span></div>
+            <div class="kpi"><span class="k" id="k-diesel">—</span><span class="l">diesel per day</span></div>
+            <div class="kpi"><span class="k" id="k-co2">—</span><span class="l">CO₂ per day</span></div>
+            <div class="kpi"><span class="k" id="k-units">—</span><span class="l">rented chillers</span></div>
+            <div class="kpi"><span class="k" id="k-open">—</span><span class="l">buildings open</span></div>
+          </div>
+          <div id="compare" class="compare"></div>
+          <p id="plan-summary" class="headline"></p>
+          <svg id="plan-map" viewBox="0 0 1000 560" role="img" aria-label="Map of the emergency plan"></svg>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Building by building</h2>
+        <table class="table" id="plan-table"><thead><tr><th>Building</th><th>Use</th><th>Needs</th><th>Plant water</th><th>Rented</th><th>Served</th><th>Status</th><th>Why</th></tr></thead><tbody></tbody></table>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h2>Approve this plan</h2>
+          <p class="muted small">Renting chillers spends money. Two named people must approve.</p>
+          <label>FP&amp;M director <input id="ap-director" placeholder="Full name"></label>
+          <label>VC for Finance <input id="ap-finance" placeholder="Full name"></label>
+          <button id="approve-plan" class="primary">Approve plan</button>
+          <p id="plan-msg" class="small"></p>
+        </div>
+        <div class="card" id="alert-card" hidden>
+          <div class="card-head"><h2>Campus alert (draft)</h2><span id="alert-status" class="pill"></span></div>
+          <label>Subject <input id="alert-subject" readonly></label>
+          <label>Message <textarea id="alert-body" rows="10"></textarea></label>
+          <label>Approved by (Communications) <input id="alert-approver" placeholder="Full name"></label>
+          <button id="approve-alert" class="secondary">Approve alert</button>
+          <p class="muted small">Demo: approving does not send anything.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REPAIRS ============ -->
+    <section id="screen-repairs" class="screen">
+      <div class="card">
+        <div class="card-head"><h2>Which pipes to replace first</h2>
+          <label class="inline">Budget <b id="r-budget-label">$15M</b><input type="range" id="r-budget" min="2" max="40" value="15"></label></div>
+        <p class="muted small">Expected loss = chance of failure in 10 years × what a failure would cost (lost cooling, weighted by what each building holds, plus the emergency repair).</p>
+        <table class="table" id="r-table"><thead><tr><th>Pipe</th><th>Size</th><th>Built</th><th>Health</th><th>Expected loss</th><th>Replace for</th><th>In plan</th></tr></thead><tbody></tbody></table>
+      </div>
+      <div class="card"><h2>Draft request to the Regents</h2><pre id="r-request" class="prose"></pre></div>
+    </section>
+
+    <!-- ============ SOURCES ============ -->
+    <section id="screen-sources" class="screen">
+      <div class="grid">
+        <div class="card"><h2>Sources</h2><ul id="src-list" class="sources"></ul></div>
+        <div class="card"><h2>What is real and what is simulated</h2>
+          <ul class="evidence">
+            <li><b>Real, cited:</b> the 2026 and 1980 events, the 34 affected buildings, costs, plant and building locations, weather, NIH awards, diesel prices.</li>
+            <li><b>Estimated:</b> building sizes and cooling loads, criticality weights, rental costs (market prices).</li>
+            <li><b>Simulated:</b> the pipe network, all sensor readings, equipment, work orders (except the 1980 and 2026 events).</li>
+          </ul>
+          <h2>Audit log</h2>
+          <button id="reset" class="ghost small">Reset demo</button>
+          <table class="table" id="audit-table"><thead><tr><th>When (UTC)</th><th>Who</th><th>Action</th><th>Object</th></tr></thead><tbody></tbody></table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span id="sim-label">Simplified, simulated data built from public facts</span> · <button class="link" data-screen="sources">Sources</button></footer>
+  <script src="/static/app.js"></script>
+</body>
+</html>

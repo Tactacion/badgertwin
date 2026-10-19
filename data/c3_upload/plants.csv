@@ -1,0 +1,4 @@
+plant_id,name,lat,lon,total_capacity_tons,data_origin
+P1,Charter Street Heating & Cooling Plant,43.0703314,-89.4051421,24500,"locations OSM/Wikipedia; capacities ASSUMED to sum to >50,000 tons (UW News)"
+P2,Walnut Street Heating & Cooling Plant,43.0744031,-89.4242481,6000,"locations OSM/Wikipedia; capacities ASSUMED to sum to >50,000 tons (UW News)"
+P3,West Campus Cogeneration Facility,43.075,-89.42389,30000,"locations OSM/Wikipedia; capacities ASSUMED to sum to >50,000 tons (UW News)"

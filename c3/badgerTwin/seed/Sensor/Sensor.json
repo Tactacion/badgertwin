@@ -1,0 +1,1280 @@
+[
+ {
+  "sensorId": "S-MKUP-P1",
+  "sensorType": "makeup_water",
+  "assetId": "P1",
+  "unit": "gal/h",
+  "description": "Charter St plant make-up water meter",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-MKUP-P1"
+ },
+ {
+  "sensorId": "S-FLOW-P1",
+  "sensorType": "flow",
+  "assetId": "P1",
+  "unit": "gpm",
+  "description": "Charter Street Heating & Cooling Plant supply flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-P1"
+ },
+ {
+  "sensorId": "S-PRES-P1",
+  "sensorType": "pressure",
+  "assetId": "P1",
+  "unit": "psi",
+  "description": "Charter Street Heating & Cooling Plant discharge pressure",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-P1"
+ },
+ {
+  "sensorId": "S-TSUP-P1",
+  "sensorType": "supply_temp",
+  "assetId": "P1",
+  "unit": "degF",
+  "description": "Chilled-water supply temp",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TSUP-P1"
+ },
+ {
+  "sensorId": "S-FLOW-P2",
+  "sensorType": "flow",
+  "assetId": "P2",
+  "unit": "gpm",
+  "description": "Walnut Street Heating & Cooling Plant supply flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-P2"
+ },
+ {
+  "sensorId": "S-PRES-P2",
+  "sensorType": "pressure",
+  "assetId": "P2",
+  "unit": "psi",
+  "description": "Walnut Street Heating & Cooling Plant discharge pressure",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-P2"
+ },
+ {
+  "sensorId": "S-TSUP-P2",
+  "sensorType": "supply_temp",
+  "assetId": "P2",
+  "unit": "degF",
+  "description": "Chilled-water supply temp",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TSUP-P2"
+ },
+ {
+  "sensorId": "S-FLOW-P3",
+  "sensorType": "flow",
+  "assetId": "P3",
+  "unit": "gpm",
+  "description": "West Campus Cogeneration Facility supply flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-P3"
+ },
+ {
+  "sensorId": "S-PRES-P3",
+  "sensorType": "pressure",
+  "assetId": "P3",
+  "unit": "psi",
+  "description": "West Campus Cogeneration Facility discharge pressure",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-P3"
+ },
+ {
+  "sensorId": "S-TSUP-P3",
+  "sensorType": "supply_temp",
+  "assetId": "P3",
+  "unit": "degF",
+  "description": "Chilled-water supply temp",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TSUP-P3"
+ },
+ {
+  "sensorId": "S-PRES-J01",
+  "sensorType": "pressure",
+  "assetId": "J01",
+  "unit": "psi",
+  "description": "Pressure at junction J01",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J01"
+ },
+ {
+  "sensorId": "S-PRES-J02",
+  "sensorType": "pressure",
+  "assetId": "J02",
+  "unit": "psi",
+  "description": "Pressure at junction J02",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J02"
+ },
+ {
+  "sensorId": "S-PRES-J03",
+  "sensorType": "pressure",
+  "assetId": "J03",
+  "unit": "psi",
+  "description": "Pressure at junction J03",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J03"
+ },
+ {
+  "sensorId": "S-PRES-J04",
+  "sensorType": "pressure",
+  "assetId": "J04",
+  "unit": "psi",
+  "description": "Pressure at junction J04",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J04"
+ },
+ {
+  "sensorId": "S-PRES-J05",
+  "sensorType": "pressure",
+  "assetId": "J05",
+  "unit": "psi",
+  "description": "Pressure at junction J05",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J05"
+ },
+ {
+  "sensorId": "S-PRES-J06",
+  "sensorType": "pressure",
+  "assetId": "J06",
+  "unit": "psi",
+  "description": "Pressure at junction J06",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J06"
+ },
+ {
+  "sensorId": "S-PRES-J07",
+  "sensorType": "pressure",
+  "assetId": "J07",
+  "unit": "psi",
+  "description": "Pressure at junction J07",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J07"
+ },
+ {
+  "sensorId": "S-PRES-J08",
+  "sensorType": "pressure",
+  "assetId": "J08",
+  "unit": "psi",
+  "description": "Pressure at junction J08",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J08"
+ },
+ {
+  "sensorId": "S-PRES-J09",
+  "sensorType": "pressure",
+  "assetId": "J09",
+  "unit": "psi",
+  "description": "Pressure at junction J09",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J09"
+ },
+ {
+  "sensorId": "S-PRES-J10",
+  "sensorType": "pressure",
+  "assetId": "J10",
+  "unit": "psi",
+  "description": "Pressure at junction J10",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J10"
+ },
+ {
+  "sensorId": "S-PRES-J11",
+  "sensorType": "pressure",
+  "assetId": "J11",
+  "unit": "psi",
+  "description": "Pressure at junction J11",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J11"
+ },
+ {
+  "sensorId": "S-PRES-J12",
+  "sensorType": "pressure",
+  "assetId": "J12",
+  "unit": "psi",
+  "description": "Pressure at junction J12",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-PRES-J12"
+ },
+ {
+  "sensorId": "S-FLOW-CW-X01",
+  "sensorType": "flow",
+  "assetId": "CW-X01",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-X01",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-X01"
+ },
+ {
+  "sensorId": "S-FLOW-CW-X02",
+  "sensorType": "flow",
+  "assetId": "CW-X02",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-X02",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-X02"
+ },
+ {
+  "sensorId": "S-FLOW-CW-M01a",
+  "sensorType": "flow",
+  "assetId": "CW-M01a",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-M01a",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-M01a"
+ },
+ {
+  "sensorId": "S-FLOW-CW-M01b",
+  "sensorType": "flow",
+  "assetId": "CW-M01b",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-M01b",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-M01b"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T04",
+  "sensorType": "flow",
+  "assetId": "CW-T04",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T04",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T04"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T05",
+  "sensorType": "flow",
+  "assetId": "CW-T05",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T05",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T05"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T06",
+  "sensorType": "flow",
+  "assetId": "CW-T06",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T06",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T06"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T07",
+  "sensorType": "flow",
+  "assetId": "CW-T07",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T07",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T07"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T08",
+  "sensorType": "flow",
+  "assetId": "CW-T08",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T08",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T08"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T09",
+  "sensorType": "flow",
+  "assetId": "CW-T09",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T09",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T09"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T10",
+  "sensorType": "flow",
+  "assetId": "CW-T10",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T10",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T10"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T11",
+  "sensorType": "flow",
+  "assetId": "CW-T11",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T11",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T11"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T12",
+  "sensorType": "flow",
+  "assetId": "CW-T12",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T12",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T12"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T13",
+  "sensorType": "flow",
+  "assetId": "CW-T13",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T13",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T13"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T14",
+  "sensorType": "flow",
+  "assetId": "CW-T14",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T14",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T14"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T15",
+  "sensorType": "flow",
+  "assetId": "CW-T15",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T15",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T15"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T16",
+  "sensorType": "flow",
+  "assetId": "CW-T16",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T16",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T16"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T17",
+  "sensorType": "flow",
+  "assetId": "CW-T17",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T17",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T17"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T18",
+  "sensorType": "flow",
+  "assetId": "CW-T18",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T18",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T18"
+ },
+ {
+  "sensorId": "S-FLOW-CW-T19",
+  "sensorType": "flow",
+  "assetId": "CW-T19",
+  "unit": "gpm",
+  "description": "Flow in trunk CW-T19",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-FLOW-CW-T19"
+ },
+ {
+  "sensorId": "S-BFLOW-B001",
+  "sensorType": "building_flow",
+  "assetId": "B001",
+  "unit": "gpm",
+  "description": "21 N. Park Street chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B001"
+ },
+ {
+  "sensorId": "S-TIN-B001",
+  "sensorType": "indoor_temp",
+  "assetId": "B001",
+  "unit": "degF",
+  "description": "21 N. Park Street average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B001"
+ },
+ {
+  "sensorId": "S-BFLOW-B002",
+  "sensorType": "building_flow",
+  "assetId": "B002",
+  "unit": "gpm",
+  "description": "45 N. Charter Street chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B002"
+ },
+ {
+  "sensorId": "S-TIN-B002",
+  "sensorType": "indoor_temp",
+  "assetId": "B002",
+  "unit": "degF",
+  "description": "45 N. Charter Street average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B002"
+ },
+ {
+  "sensorId": "S-BFLOW-B003",
+  "sensorType": "building_flow",
+  "assetId": "B003",
+  "unit": "gpm",
+  "description": "Agricultural Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B003"
+ },
+ {
+  "sensorId": "S-TIN-B003",
+  "sensorType": "indoor_temp",
+  "assetId": "B003",
+  "unit": "degF",
+  "description": "Agricultural Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B003"
+ },
+ {
+  "sensorId": "S-BFLOW-B004",
+  "sensorType": "building_flow",
+  "assetId": "B004",
+  "unit": "gpm",
+  "description": "Agricultural Engineering Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B004"
+ },
+ {
+  "sensorId": "S-TIN-B004",
+  "sensorType": "indoor_temp",
+  "assetId": "B004",
+  "unit": "degF",
+  "description": "Agricultural Engineering Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B004"
+ },
+ {
+  "sensorId": "S-BFLOW-B005",
+  "sensorType": "building_flow",
+  "assetId": "B005",
+  "unit": "gpm",
+  "description": "Armory & Gymnasium (Red Gym) chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B005"
+ },
+ {
+  "sensorId": "S-TIN-B005",
+  "sensorType": "indoor_temp",
+  "assetId": "B005",
+  "unit": "degF",
+  "description": "Armory & Gymnasium (Red Gym) average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B005"
+ },
+ {
+  "sensorId": "S-BFLOW-B006",
+  "sensorType": "building_flow",
+  "assetId": "B006",
+  "unit": "gpm",
+  "description": "Bascom Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B006"
+ },
+ {
+  "sensorId": "S-TIN-B006",
+  "sensorType": "indoor_temp",
+  "assetId": "B006",
+  "unit": "degF",
+  "description": "Bascom Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B006"
+ },
+ {
+  "sensorId": "S-BFLOW-B007",
+  "sensorType": "building_flow",
+  "assetId": "B007",
+  "unit": "gpm",
+  "description": "Bradley Memorial Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B007"
+ },
+ {
+  "sensorId": "S-TIN-B007",
+  "sensorType": "indoor_temp",
+  "assetId": "B007",
+  "unit": "degF",
+  "description": "Bradley Memorial Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B007"
+ },
+ {
+  "sensorId": "S-BFLOW-B008",
+  "sensorType": "building_flow",
+  "assetId": "B008",
+  "unit": "gpm",
+  "description": "Educational Sciences chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B008"
+ },
+ {
+  "sensorId": "S-TIN-B008",
+  "sensorType": "indoor_temp",
+  "assetId": "B008",
+  "unit": "degF",
+  "description": "Educational Sciences average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B008"
+ },
+ {
+  "sensorId": "S-BFLOW-B009",
+  "sensorType": "building_flow",
+  "assetId": "B009",
+  "unit": "gpm",
+  "description": "Fleet & Service Garage chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B009"
+ },
+ {
+  "sensorId": "S-TIN-B009",
+  "sensorType": "indoor_temp",
+  "assetId": "B009",
+  "unit": "degF",
+  "description": "Fleet & Service Garage average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B009"
+ },
+ {
+  "sensorId": "S-BFLOW-B010",
+  "sensorType": "building_flow",
+  "assetId": "B010",
+  "unit": "gpm",
+  "description": "Grainger Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B010"
+ },
+ {
+  "sensorId": "S-TIN-B010",
+  "sensorType": "indoor_temp",
+  "assetId": "B010",
+  "unit": "degF",
+  "description": "Grainger Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B010"
+ },
+ {
+  "sensorId": "S-BFLOW-B011",
+  "sensorType": "building_flow",
+  "assetId": "B011",
+  "unit": "gpm",
+  "description": "Henry Taylor Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B011"
+ },
+ {
+  "sensorId": "S-TIN-B011",
+  "sensorType": "indoor_temp",
+  "assetId": "B011",
+  "unit": "degF",
+  "description": "Henry Taylor Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B011"
+ },
+ {
+  "sensorId": "S-BFLOW-B012",
+  "sensorType": "building_flow",
+  "assetId": "B012",
+  "unit": "gpm",
+  "description": "Hiram Smith Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B012"
+ },
+ {
+  "sensorId": "S-TIN-B012",
+  "sensorType": "indoor_temp",
+  "assetId": "B012",
+  "unit": "degF",
+  "description": "Hiram Smith Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B012"
+ },
+ {
+  "sensorId": "S-BFLOW-B013",
+  "sensorType": "building_flow",
+  "assetId": "B013",
+  "unit": "gpm",
+  "description": "Ingraham Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B013"
+ },
+ {
+  "sensorId": "S-TIN-B013",
+  "sensorType": "indoor_temp",
+  "assetId": "B013",
+  "unit": "degF",
+  "description": "Ingraham Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B013"
+ },
+ {
+  "sensorId": "S-BFLOW-B014",
+  "sensorType": "building_flow",
+  "assetId": "B014",
+  "unit": "gpm",
+  "description": "Kurt F. Wendt Commons chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B014"
+ },
+ {
+  "sensorId": "S-TIN-B014",
+  "sensorType": "indoor_temp",
+  "assetId": "B014",
+  "unit": "degF",
+  "description": "Kurt F. Wendt Commons average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B014"
+ },
+ {
+  "sensorId": "S-BFLOW-B015",
+  "sensorType": "building_flow",
+  "assetId": "B015",
+  "unit": "gpm",
+  "description": "Music Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B015"
+ },
+ {
+  "sensorId": "S-TIN-B015",
+  "sensorType": "indoor_temp",
+  "assetId": "B015",
+  "unit": "degF",
+  "description": "Music Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B015"
+ },
+ {
+  "sensorId": "S-BFLOW-B016",
+  "sensorType": "building_flow",
+  "assetId": "B016",
+  "unit": "gpm",
+  "description": "North Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B016"
+ },
+ {
+  "sensorId": "S-TIN-B016",
+  "sensorType": "indoor_temp",
+  "assetId": "B016",
+  "unit": "degF",
+  "description": "North Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B016"
+ },
+ {
+  "sensorId": "S-BFLOW-B017",
+  "sensorType": "building_flow",
+  "assetId": "B017",
+  "unit": "gpm",
+  "description": "Radio Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B017"
+ },
+ {
+  "sensorId": "S-TIN-B017",
+  "sensorType": "indoor_temp",
+  "assetId": "B017",
+  "unit": "degF",
+  "description": "Radio Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B017"
+ },
+ {
+  "sensorId": "S-BFLOW-B018",
+  "sensorType": "building_flow",
+  "assetId": "B018",
+  "unit": "gpm",
+  "description": "Science Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B018"
+ },
+ {
+  "sensorId": "S-TIN-B018",
+  "sensorType": "indoor_temp",
+  "assetId": "B018",
+  "unit": "degF",
+  "description": "Science Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B018"
+ },
+ {
+  "sensorId": "S-BFLOW-B019",
+  "sensorType": "building_flow",
+  "assetId": "B019",
+  "unit": "gpm",
+  "description": "Service Memorial Institute chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B019"
+ },
+ {
+  "sensorId": "S-TIN-B019",
+  "sensorType": "indoor_temp",
+  "assetId": "B019",
+  "unit": "degF",
+  "description": "Service Memorial Institute average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B019"
+ },
+ {
+  "sensorId": "S-BFLOW-B020",
+  "sensorType": "building_flow",
+  "assetId": "B020",
+  "unit": "gpm",
+  "description": "South Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B020"
+ },
+ {
+  "sensorId": "S-TIN-B020",
+  "sensorType": "indoor_temp",
+  "assetId": "B020",
+  "unit": "degF",
+  "description": "South Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B020"
+ },
+ {
+  "sensorId": "S-BFLOW-B021",
+  "sensorType": "building_flow",
+  "assetId": "B021",
+  "unit": "gpm",
+  "description": "Stock Pavilion chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B021"
+ },
+ {
+  "sensorId": "S-TIN-B021",
+  "sensorType": "indoor_temp",
+  "assetId": "B021",
+  "unit": "degF",
+  "description": "Stock Pavilion average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B021"
+ },
+ {
+  "sensorId": "S-BFLOW-B022",
+  "sensorType": "building_flow",
+  "assetId": "B022",
+  "unit": "gpm",
+  "description": "William H. Sewell Social Sciences Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B022"
+ },
+ {
+  "sensorId": "S-TIN-B022",
+  "sensorType": "indoor_temp",
+  "assetId": "B022",
+  "unit": "degF",
+  "description": "William H. Sewell Social Sciences Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B022"
+ },
+ {
+  "sensorId": "S-BFLOW-B023",
+  "sensorType": "building_flow",
+  "assetId": "B023",
+  "unit": "gpm",
+  "description": "William S. Middleton Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B023"
+ },
+ {
+  "sensorId": "S-TIN-B023",
+  "sensorType": "indoor_temp",
+  "assetId": "B023",
+  "unit": "degF",
+  "description": "William S. Middleton Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B023"
+ },
+ {
+  "sensorId": "S-BFLOW-B024",
+  "sensorType": "building_flow",
+  "assetId": "B024",
+  "unit": "gpm",
+  "description": "445 Henry Mall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B024"
+ },
+ {
+  "sensorId": "S-TIN-B024",
+  "sensorType": "indoor_temp",
+  "assetId": "B024",
+  "unit": "degF",
+  "description": "445 Henry Mall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B024"
+ },
+ {
+  "sensorId": "S-BFLOW-B025",
+  "sensorType": "building_flow",
+  "assetId": "B025",
+  "unit": "gpm",
+  "description": "Below Alumni Center (One Alumni Place) chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B025"
+ },
+ {
+  "sensorId": "S-TIN-B025",
+  "sensorType": "indoor_temp",
+  "assetId": "B025",
+  "unit": "degF",
+  "description": "Below Alumni Center (One Alumni Place) average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B025"
+ },
+ {
+  "sensorId": "S-BFLOW-B026",
+  "sensorType": "building_flow",
+  "assetId": "B026",
+  "unit": "gpm",
+  "description": "Bardeen Medical Laboratories chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B026"
+ },
+ {
+  "sensorId": "S-TIN-B026",
+  "sensorType": "indoor_temp",
+  "assetId": "B026",
+  "unit": "degF",
+  "description": "Bardeen Medical Laboratories average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B026"
+ },
+ {
+  "sensorId": "S-BFLOW-B027",
+  "sensorType": "building_flow",
+  "assetId": "B027",
+  "unit": "gpm",
+  "description": "McArdle Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B027"
+ },
+ {
+  "sensorId": "S-TIN-B027",
+  "sensorType": "indoor_temp",
+  "assetId": "B027",
+  "unit": "degF",
+  "description": "McArdle Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B027"
+ },
+ {
+  "sensorId": "S-BFLOW-B028",
+  "sensorType": "building_flow",
+  "assetId": "B028",
+  "unit": "gpm",
+  "description": "Medical Sciences Center chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B028"
+ },
+ {
+  "sensorId": "S-TIN-B028",
+  "sensorType": "indoor_temp",
+  "assetId": "B028",
+  "unit": "degF",
+  "description": "Medical Sciences Center average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B028"
+ },
+ {
+  "sensorId": "S-BFLOW-B029",
+  "sensorType": "building_flow",
+  "assetId": "B029",
+  "unit": "gpm",
+  "description": "Nancy Nicholas Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B029"
+ },
+ {
+  "sensorId": "S-TIN-B029",
+  "sensorType": "indoor_temp",
+  "assetId": "B029",
+  "unit": "degF",
+  "description": "Nancy Nicholas Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B029"
+ },
+ {
+  "sensorId": "S-BFLOW-B030",
+  "sensorType": "building_flow",
+  "assetId": "B030",
+  "unit": "gpm",
+  "description": "University Club (432 East Campus Mall) chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B030"
+ },
+ {
+  "sensorId": "S-TIN-B030",
+  "sensorType": "indoor_temp",
+  "assetId": "B030",
+  "unit": "degF",
+  "description": "University Club (432 East Campus Mall) average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B030"
+ },
+ {
+  "sensorId": "S-BFLOW-B031",
+  "sensorType": "building_flow",
+  "assetId": "B031",
+  "unit": "gpm",
+  "description": "Van Hise Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B031"
+ },
+ {
+  "sensorId": "S-TIN-B031",
+  "sensorType": "indoor_temp",
+  "assetId": "B031",
+  "unit": "degF",
+  "description": "Van Hise Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B031"
+ },
+ {
+  "sensorId": "S-BFLOW-B032",
+  "sensorType": "building_flow",
+  "assetId": "B032",
+  "unit": "gpm",
+  "description": "Van Vleck Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B032"
+ },
+ {
+  "sensorId": "S-TIN-B032",
+  "sensorType": "indoor_temp",
+  "assetId": "B032",
+  "unit": "degF",
+  "description": "Van Vleck Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B032"
+ },
+ {
+  "sensorId": "S-BFLOW-B033",
+  "sensorType": "building_flow",
+  "assetId": "B033",
+  "unit": "gpm",
+  "description": "Vilas Communication Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B033"
+ },
+ {
+  "sensorId": "S-TIN-B033",
+  "sensorType": "indoor_temp",
+  "assetId": "B033",
+  "unit": "degF",
+  "description": "Vilas Communication Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B033"
+ },
+ {
+  "sensorId": "S-BFLOW-B034",
+  "sensorType": "building_flow",
+  "assetId": "B034",
+  "unit": "gpm",
+  "description": "W. J. Brogden Psychology Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B034"
+ },
+ {
+  "sensorId": "S-TIN-B034",
+  "sensorType": "indoor_temp",
+  "assetId": "B034",
+  "unit": "degF",
+  "description": "W. J. Brogden Psychology Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B034"
+ },
+ {
+  "sensorId": "S-BFLOW-B035",
+  "sensorType": "building_flow",
+  "assetId": "B035",
+  "unit": "gpm",
+  "description": "Memorial Union chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B035"
+ },
+ {
+  "sensorId": "S-TIN-B035",
+  "sensorType": "indoor_temp",
+  "assetId": "B035",
+  "unit": "degF",
+  "description": "Memorial Union average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B035"
+ },
+ {
+  "sensorId": "S-BFLOW-B036",
+  "sensorType": "building_flow",
+  "assetId": "B036",
+  "unit": "gpm",
+  "description": "Union South chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B036"
+ },
+ {
+  "sensorId": "S-TIN-B036",
+  "sensorType": "indoor_temp",
+  "assetId": "B036",
+  "unit": "degF",
+  "description": "Union South average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B036"
+ },
+ {
+  "sensorId": "S-BFLOW-B037",
+  "sensorType": "building_flow",
+  "assetId": "B037",
+  "unit": "gpm",
+  "description": "Chemistry Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B037"
+ },
+ {
+  "sensorId": "S-TIN-B037",
+  "sensorType": "indoor_temp",
+  "assetId": "B037",
+  "unit": "degF",
+  "description": "Chemistry Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B037"
+ },
+ {
+  "sensorId": "S-BFLOW-B038",
+  "sensorType": "building_flow",
+  "assetId": "B038",
+  "unit": "gpm",
+  "description": "Computer Sceinces Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B038"
+ },
+ {
+  "sensorId": "S-TIN-B038",
+  "sensorType": "indoor_temp",
+  "assetId": "B038",
+  "unit": "degF",
+  "description": "Computer Sceinces Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B038"
+ },
+ {
+  "sensorId": "S-BFLOW-B039",
+  "sensorType": "building_flow",
+  "assetId": "B039",
+  "unit": "gpm",
+  "description": "Morgridge Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B039"
+ },
+ {
+  "sensorId": "S-TIN-B039",
+  "sensorType": "indoor_temp",
+  "assetId": "B039",
+  "unit": "degF",
+  "description": "Morgridge Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B039"
+ },
+ {
+  "sensorId": "S-BFLOW-B040",
+  "sensorType": "building_flow",
+  "assetId": "B040",
+  "unit": "gpm",
+  "description": "Engineering Centers Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B040"
+ },
+ {
+  "sensorId": "S-TIN-B040",
+  "sensorType": "indoor_temp",
+  "assetId": "B040",
+  "unit": "degF",
+  "description": "Engineering Centers Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B040"
+ },
+ {
+  "sensorId": "S-BFLOW-B041",
+  "sensorType": "building_flow",
+  "assetId": "B041",
+  "unit": "gpm",
+  "description": "Mechanical Engineering Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B041"
+ },
+ {
+  "sensorId": "S-TIN-B041",
+  "sensorType": "indoor_temp",
+  "assetId": "B041",
+  "unit": "degF",
+  "description": "Mechanical Engineering Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B041"
+ },
+ {
+  "sensorId": "S-BFLOW-B042",
+  "sensorType": "building_flow",
+  "assetId": "B042",
+  "unit": "gpm",
+  "description": "Microbial Sciences Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B042"
+ },
+ {
+  "sensorId": "S-TIN-B042",
+  "sensorType": "indoor_temp",
+  "assetId": "B042",
+  "unit": "degF",
+  "description": "Microbial Sciences Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B042"
+ },
+ {
+  "sensorId": "S-BFLOW-B043",
+  "sensorType": "building_flow",
+  "assetId": "B043",
+  "unit": "gpm",
+  "description": "Health Sciences Learning Center chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B043"
+ },
+ {
+  "sensorId": "S-TIN-B043",
+  "sensorType": "indoor_temp",
+  "assetId": "B043",
+  "unit": "degF",
+  "description": "Health Sciences Learning Center average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B043"
+ },
+ {
+  "sensorId": "S-BFLOW-B044",
+  "sensorType": "building_flow",
+  "assetId": "B044",
+  "unit": "gpm",
+  "description": "Memorial Library chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B044"
+ },
+ {
+  "sensorId": "S-TIN-B044",
+  "sensorType": "indoor_temp",
+  "assetId": "B044",
+  "unit": "degF",
+  "description": "Memorial Library average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B044"
+ },
+ {
+  "sensorId": "S-BFLOW-B045",
+  "sensorType": "building_flow",
+  "assetId": "B045",
+  "unit": "gpm",
+  "description": "Helen C. White Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B045"
+ },
+ {
+  "sensorId": "S-TIN-B045",
+  "sensorType": "indoor_temp",
+  "assetId": "B045",
+  "unit": "degF",
+  "description": "Helen C. White Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B045"
+ },
+ {
+  "sensorId": "S-BFLOW-B046",
+  "sensorType": "building_flow",
+  "assetId": "B046",
+  "unit": "gpm",
+  "description": "Wisconsin Institutes for Medical Research chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B046"
+ },
+ {
+  "sensorId": "S-TIN-B046",
+  "sensorType": "indoor_temp",
+  "assetId": "B046",
+  "unit": "degF",
+  "description": "Wisconsin Institutes for Medical Research average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B046"
+ },
+ {
+  "sensorId": "S-BFLOW-B047",
+  "sensorType": "building_flow",
+  "assetId": "B047",
+  "unit": "gpm",
+  "description": "Wisconsin Institute for Discovery chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B047"
+ },
+ {
+  "sensorId": "S-TIN-B047",
+  "sensorType": "indoor_temp",
+  "assetId": "B047",
+  "unit": "degF",
+  "description": "Wisconsin Institute for Discovery average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B047"
+ },
+ {
+  "sensorId": "S-BFLOW-B048",
+  "sensorType": "building_flow",
+  "assetId": "B048",
+  "unit": "gpm",
+  "description": "Kohl Center chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B048"
+ },
+ {
+  "sensorId": "S-TIN-B048",
+  "sensorType": "indoor_temp",
+  "assetId": "B048",
+  "unit": "degF",
+  "description": "Kohl Center average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B048"
+ },
+ {
+  "sensorId": "S-BFLOW-B049",
+  "sensorType": "building_flow",
+  "assetId": "B049",
+  "unit": "gpm",
+  "description": "Rennebohm Hall chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B049"
+ },
+ {
+  "sensorId": "S-TIN-B049",
+  "sensorType": "indoor_temp",
+  "assetId": "B049",
+  "unit": "degF",
+  "description": "Rennebohm Hall average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B049"
+ },
+ {
+  "sensorId": "S-BFLOW-B050",
+  "sensorType": "building_flow",
+  "assetId": "B050",
+  "unit": "gpm",
+  "description": "DeLuca Biochemistry Building chilled-water flow",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-BFLOW-B050"
+ },
+ {
+  "sensorId": "S-TIN-B050",
+  "sensorType": "indoor_temp",
+  "assetId": "B050",
+  "unit": "degF",
+  "description": "DeLuca Biochemistry Building average indoor temperature",
+  "dataOrigin": "SIMULATED (EPANET replay + noise)",
+  "id": "S-TIN-B050"
+ }
+]
